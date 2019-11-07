@@ -1,0 +1,47 @@
+11:25:08.756 COMMENT   Engine           Test Scenario execution started
+11:25:08.757 INFO      Engine           Using context settings:
+  Engine Version       : 19.6.1
+  Environment id                : 5cee98c2d3142c1f90a4976d
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : cwcc.compuware.com
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : hddrxm0
+11:25:08.757 INFO      Engine           Setting variables from context and context data extensions
+11:25:08.757 INFO      Engine             id: environmentId      value: 5cee98c2d3142c1f90a4976d
+11:25:08.757 INFO      Engine             id: environmentType    value: BATCH
+11:25:08.757 INFO      Engine             id: userId             value: hddrxm0
+11:25:08.759 INFO      Component        Interpreting Component: XADB2TST program:XADB2TST
+11:25:08.794 LOG       CWCC Batch       Component Runtime Settings:
+11:25:08.794 LOG       CWCC Batch         Load libraries :
+11:25:08.794 LOG       CWCC Batch         Optional main Load library:SYS2.CW.CXR17Y.SLCXLOAD
+11:25:08.794 LOG       CWCC Batch         Listing libraries         :
+11:25:08.794 LOG       CWCC Batch         SysDebug libraries        :
+11:25:08.794 LOG       CWCC Batch         DB2 Subsystem ID          :DBCC
+11:25:08.794 LOG       CWCC Batch         DB2 plan                  :TOPAZTST
+11:25:08.794 LOG       CWCC Batch         Call interface            :NONE
+11:25:08.794 LOG       CWCC Batch         Debugger type             :NONE
+11:25:08.794 LOG       CWCC Batch         Component type            :COBOL
+11:25:08.803 INFO      CWCC Batch       Sending Module execution request to Host for module:XADB2TST rollback:false
+11:25:09.189 INFO      HCIClient        Creating job directory /u/xatester/hddrxm0/293b540fac4342b2ae4d1ce20e6d5a18
+11:25:09.595 LOG       CWCC Batch       Uploading input data for module XADB2TST
+11:25:11.033 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>EXECUTE</operation><runat>DAY</runat><loglevel>log</loglevel><inputfilepath>XAT_Module.i.xml</inputfilepath><outputfilepath>XAT_Module.o.xml</outputfilepath><runtime>BATCH</runtime><callinterface /><applid /><db2plan>TOPAZTST</db2plan><db2id>DBCC</db2id><rollback>false</rollback><jobdirectory>293b540fac4342b2ae4d1ce20e6d5a18</jobdirectory><amode24>false</amode24><members><membername>XADB2TST</membername></members><loads><mainload>SYS2.CW.CXR17Y.SLCXLOAD</mainload></loads><codepage>1047</codepage><lang>COBOL</lang></xatz_request></XATZREQ>
+11:25:11.487 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0799783</jobid><jobname>HDDRXM0E</jobname><starttime>20191029062511379</starttime></xatz_response></XATZRESP>
+11:25:11.491 LOG       HCIClient        Response received from Host. Message: JobId:J0799783
+11:25:11.491 INFO      HCIClient        Job has been started at host with JobId:J0799783
+11:25:11.492 INFO      CWCC Batch       Waiting for Execution Result from Host
+11:25:15.038 INFO      CWCC Batch       Component completed with program exit: +0
+11:25:15.384 LOG       CWCC Batch       Setting execution variable 'jobid' to J0799783
+11:25:15.384 LOG       CWCC Batch       Setting execution variable 'programexit' to 0
+11:25:15.747 INFO      Component        Verifying program exit code: 0 against verify expression: value < 8
+11:25:16.201 INFO      Component        Program exit code was verified to be accepted by the expression: value < 8
+11:25:16.201 INFO      Component        Finished interpreting Component: XADB2TST program:XADB2TST
+11:25:16.204 VERIFY    ExpectedData     VerificationResult : DataItem: /xadb2tst-export/xadb2tst-exp-table[0]/xadb2tst-exp-lastname. Actual value is different from expected. Actual value: Persen Expected value: Person. Actual value:Persen. Expected value:Person
+11:25:16.204 VERIFY    Engine           Component name:XADB2TST contains data that where not verified correctly
+11:25:16.204 COMMENT   Engine           Test Scenario execution ended

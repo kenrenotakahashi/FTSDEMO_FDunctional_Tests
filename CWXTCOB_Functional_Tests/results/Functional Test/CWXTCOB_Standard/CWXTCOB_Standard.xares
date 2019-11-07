@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XaUnitResult resultType="VERIFICATION_ERROR" containsSimulation="false">
-  <ExecutionId>63634df0-6422-4545-baed-65c6cbf4451e</ExecutionId>
+  <ExecutionId>1dac3b92-cd18-4d5d-a9cd-8ef6ec363332</ExecutionId>
   <Message />
   <AST>
     <XaUnit xmlns="http://www.xact.dk/xatester/v/1" xmlns:data="http://www.xact.dk/xatester/data/v/1">
@@ -972,7 +972,7 @@
                   <emp-dtl-slash2>/</emp-dtl-slash2>
                   <emp-dtl-hire-yy>81</emp-dtl-hire-yy>
                   <filler5 />
-                  <emp-dtl-yrs-of-service>37</emp-dtl-yrs-of-service>
+                  <emp-dtl-yrs-of-service>38</emp-dtl-yrs-of-service>
                   <filler6 />
                   <emp-dtl-wages>1083.00</emp-dtl-wages>
                   <filler7 />
@@ -1339,12 +1339,22 @@
               <Path>/employee-hdr1/emp-run-dd</Path>
               <Path>/employee-hdr1/emp-run-yy</Path>
             </ExcludedFields>
-            <Result>&lt;root&gt;&lt;difs&gt;&#xD;&lt;dif&gt;&lt;newrno&gt;21&lt;/newrno&gt;&lt;oldrno&gt;21&lt;/oldrno&gt; &#xD;&lt;newchr&gt;&lt;![CDATA[ MARK JOHNSON    WEST    S   09/30/82   37    750.00     0.00   6000.00  6750.00]]&gt;&lt;/newchr&gt; &#xD;&lt;oldchr&gt;&lt;![CDATA[ MARK JOHNSON    WEST    S   09/30/82   36    750.00     0.00   6000.00  6750.00]]&gt;&lt;/oldchr&gt; &#xD;&lt;newhex1&gt;4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF&lt;/newhex1&gt; &#xD;&lt;newhex2&gt;0419201685265000065230000200009130182000370000750B00000000B000006000B00006750B00&lt;/newhex2&gt; &#xD;&lt;oldhex1&gt;4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF&lt;/oldhex1&gt; &#xD;&lt;oldhex2&gt;0419201685265000065230000200009130182000360000750B00000000B000006000B00006750B00&lt;/oldhex2&gt; &#xD;&lt;/dif&gt;&#xD;&lt;/difs&gt;&lt;/root&gt;</Result>
-            <ExpectedResult><![CDATA[Record number: 21
+            <Result>&lt;root&gt;&lt;difs&gt;&#xD;&lt;dif&gt;&lt;newrno&gt;10&lt;/newrno&gt;&lt;oldrno&gt;10&lt;/oldrno&gt; &#xD;&lt;newchr&gt;&lt;![CDATA[ JOHN SMITH      NORTH   H   10/15/81   38   1083.00     0.00      0.00  1083.00]]&gt;&lt;/newchr&gt; &#xD;&lt;oldchr&gt;&lt;![CDATA[ JOHN SMITH      NORTH   H   10/15/81   37   1083.00     0.00      0.00  1083.00]]&gt;&lt;/oldchr&gt; &#xD;&lt;newhex1&gt;4DDCD4EDCEC444444DDDEC444C444FF6FF6FF444FF444FFFF4FF44444F4FF444444F4FF44FFFF4FF&lt;/newhex1&gt; &#xD;&lt;newhex2&gt;0168502493800000056938000800010115181000380001083B00000000B000000000B00001083B00&lt;/newhex2&gt; &#xD;&lt;oldhex1&gt;4DDCD4EDCEC444444DDDEC444C444FF6FF6FF444FF444FFFF4FF44444F4FF444444F4FF44FFFF4FF&lt;/oldhex1&gt; &#xD;&lt;oldhex2&gt;0168502493800000056938000800010115181000370001083B00000000B000000000B00001083B00&lt;/oldhex2&gt; &#xD;&lt;/dif&gt;&#xD;&lt;dif&gt;&lt;newrno&gt;21&lt;/newrno&gt;&lt;oldrno&gt;21&lt;/oldrno&gt; &#xD;&lt;newchr&gt;&lt;![CDATA[ MARK JOHNSON    WEST    S   09/30/82   37    750.00     0.00   6000.00  6750.00]]&gt;&lt;/newchr&gt; &#xD;&lt;oldchr&gt;&lt;![CDATA[ MARK JOHNSON    WEST    S   09/30/82   36    750.00     0.00   6000.00  6750.00]]&gt;&lt;/oldchr&gt; &#xD;&lt;newhex1&gt;4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF&lt;/newhex1&gt; &#xD;&lt;newhex2&gt;0419201685265000065230000200009130182000370000750B00000000B000006000B00006750B00&lt;/newhex2&gt; &#xD;&lt;oldhex1&gt;4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF&lt;/oldhex1&gt; &#xD;&lt;oldhex2&gt;0419201685265000065230000200009130182000360000750B00000000B000006000B00006750B00&lt;/oldhex2&gt; &#xD;&lt;/dif&gt;&#xD;&lt;/difs&gt;&lt;/root&gt;</Result>
+            <ExpectedResult><![CDATA[Record number: 10
+ JOHN SMITH      NORTH   H   10/15/81   37   1083.00     0.00      0.00  1083.00
+4DDCD4EDCEC444444DDDEC444C444FF6FF6FF444FF444FFFF4FF44444F4FF444444F4FF44FFFF4FF
+0168502493800000056938000800010115181000370001083B00000000B000000000B00001083B00
+
+Record number: 21
  MARK JOHNSON    WEST    S   09/30/82   36    750.00     0.00   6000.00  6750.00
 4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF
 0419201685265000065230000200009130182000360000750B00000000B000006000B00006750B00]]></ExpectedResult>
-            <ActualResult><![CDATA[Record number: 21
+            <ActualResult><![CDATA[Record number: 10
+ JOHN SMITH      NORTH   H   10/15/81   38   1083.00     0.00      0.00  1083.00
+4DDCD4EDCEC444444DDDEC444C444FF6FF6FF444FF444FFFF4FF44444F4FF444444F4FF44FFFF4FF
+0168502493800000056938000800010115181000380001083B00000000B000000000B00001083B00
+
+Record number: 21
  MARK JOHNSON    WEST    S   09/30/82   37    750.00     0.00   6000.00  6750.00
 4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF
 0419201685265000065230000200009130182000370000750B00000000B000006000B00006750B00]]></ActualResult>
@@ -1387,6 +1397,7 @@
         </Parameter>
       </ExtensionData>
       <References componentName="cwxtcob">
+        <Reference>//RPTFILE DD DISP=SHR,DSN=HDDRXM0.DEMO.CWXTRPT</Reference>
         <Reference>//RPTFILE DD DISP=SHR,DSN=HDDRXM0.DEMO.CWXTRPT</Reference>
       </References>
       <XaUnit xmlns:data="http://www.xact.dk/xatester/data/v/1" componentNameUnderTest="cwxtcob" path="CWXTCOB_Standard.xaunit">
@@ -2533,6 +2544,6 @@ tmpTotal.toFixed(2)]]></Statement>
       </ExternalResources>
     </ExecutionContext>
   </Context>
-  <Started>20191003-20-38-14</Started>
-  <Ended>20191003-20-38-39</Ended>
+  <Started>20191024-20-18-46</Started>
+  <Ended>20191024-20-19-28</Ended>
 </XaUnitResult>

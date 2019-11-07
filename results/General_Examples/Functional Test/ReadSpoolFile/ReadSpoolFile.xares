@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XaUnitResult resultType="SUCCESS" containsSimulation="false">
+  <ExecutionId>cf112c31-2c0f-4a8a-a0d9-38f750527c82</ExecutionId>
+  <Message />
+  <AST>
+    <XaUnit xmlns="http://www.xact.dk/xatester/v/1" xmlns:data="http://www.xact.dk/xatester/data/v/1">
+      <Test>
+        <SpoolFile jobId="J0791588" ddname="SYSOUT" stepname="STEP1" ashex="false" id="spoolId"><![CDATA[CEE3740I The following messages pertain to the system default run-time options.
+ CEE3768I The system default for the run-time option DEBUG could not be overridden.
+ CEE3768I The system default for the run-time option TRAP could not be overridden.]]></SpoolFile>
+      </Test>
+    </XaUnit>
+  </AST>
+  <Context>
+    <ExecutionContext xmlns="http://www.xact.dk/xatester/v/1" environment="5cee98c2d3142c1f90a4976d" logLevel="LOG" remote="false" useSimulations="true" uploadResult="false" timeout="300" readTimeout="30" debuggerType="NONE" jobInfoInterval="3" userid="hddrxm0">
+      <platformruntime database="DBCCCWCC" driver="com.ibm.db2.jcc.DB2Driver" uri="jdbc:db2://cwcc.compuware.com:546/${database}" environmenttype="BATCH" callinterface="NONE" />
+      <ExtensionData />
+      <XaUnit xmlns:data="http://www.xact.dk/xatester/data/v/1" path="ReadSpoolFile.xaunit">
+        <Test>
+          <SpoolFile jobId="J0791588" ddname="SYSOUT" stepname="STEP1" ashex="false" id="spoolId" />
+        </Test>
+      </XaUnit>
+      <ExternalResources />
+    </ExecutionContext>
+  </Context>
+  <Started>20191004-01-33-32</Started>
+  <Ended>20191004-01-33-32</Ended>
+</XaUnitResult>

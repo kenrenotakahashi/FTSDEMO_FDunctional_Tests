@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExecutionContext xmlns="http://www.xact.dk/xatester/v/1" environment="5cee990bd3142c1f90a4976f" logLevel="LOG" remote="false" useSimulations="true" uploadResult="false" timeout="600" readTimeout="30" debuggerType="NONE" jobInfoInterval="3">
+  <ExtensionData />
+  <ExtensionData componentName="lgicus01" componentId="5d4d46d6423da3164cab5cb4">
+    <Parameter key="db2id">
+      <Value>DBCC</Value>
+    </Parameter>
+    <Parameter key="db2plan">
+      <Value>GENAONE</Value>
+    </Parameter>
+    <Parameter key="applid">
+      <Value>HCCAC013</Value>
+    </Parameter>
+    <Parameter key="sourcelibrary">
+      <Value>GENAPP.ISPW.PROD.COB</Value>
+    </Parameter>
+    <Parameter key="loadlibrary">
+      <Value>GENAPP.ISPW.PROD.LOAD</Value>
+    </Parameter>
+    <Parameter key="copybooknames">
+      <Value>LGCMAREA</Value>
+      <Value>LGPOLICY</Value>
+    </Parameter>
+    <Parameter key="sourcelibraries">
+      <Value>GENAPP.ISPW.PROD.COPY</Value>
+    </Parameter>
+    <Parameter key="callinterface">
+      <Value>CICSLINK</Value>
+    </Parameter>
+  </ExtensionData>
+  <XaUnit path="LGICUS01.xaunit" />
+</ExecutionContext>

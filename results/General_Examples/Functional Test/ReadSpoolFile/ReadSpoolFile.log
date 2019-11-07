@@ -1,0 +1,100 @@
+01:33:32.474 COMMENT   Engine           Test Scenario execution started
+01:33:32.475 INFO      Engine           Using context settings:
+  Engine Version       : 19.6.1
+  Environment id                : 5cee98c2d3142c1f90a4976d
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : cwcc.compuware.com
+  Server port                   : 16196
+  Job execution timeout seconds : 300
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : hddrxm0
+01:33:32.475 INFO      Engine           Setting variables from context and context data extensions
+01:33:32.475 INFO      Engine             id: environmentId      value: 5cee98c2d3142c1f90a4976d
+01:33:32.475 INFO      Engine             id: environmentType    value: BATCH
+01:33:32.475 INFO      Engine             id: userId             value: hddrxm0
+01:33:32.476 WARNING   SpoolFile        Interpreting SpoolFile element
+01:33:32.476 INFO      SpoolFile        Interpreting SpoolFile with jobId: J0791588 DD name: SYSOUT step name: STEP1
+01:33:32.479 LOG       CWCC Batch       Getting information about the job: J0791588
+01:33:32.589 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>JOBINFO</operation><runat>DAY</runat><jobid>J0791588</jobid></xatz_request></XATZREQ>
+01:33:32.652 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0000</resultcode><resultmessage>Job information successfully returned</resultmessage><jobid /><responsedata><job><name>HDDRXM0X</name><status>OUTPUT</status><returncode>CC=0000    </returncode><steps><step><id>J0791588</id><name>JES2    </name><procstep>        </procstep><ddname>JESMSGLG</ddname><linect>   23</linect><lrecl>  133</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000002.JESMSGLG </dsname></step><step><id>J0791588</id><name>JES2    </name><procstep>        </procstep><ddname>JESJCL  </ddname><linect>   21</linect><lrecl>  136</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000003.JESJCL   </dsname></step><step><id>J0791588</id><name>JES2    </name><procstep>        </procstep><ddname>JESYSMSG</ddname><linect>  107</linect><lrecl>  137</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000004.JESYSMSG </dsname></step><step><id>J0791588</id><name>STEP1   </name><procstep>        </procstep><ddname>RPTFILE </ddname><linect>   24</linect><lrecl>   80</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000101.?        </dsname></step><step><id>J0791588</id><name>STEP1   </name><procstep>        </procstep><ddname>SYSOUT  </ddname><linect>    3</linect><lrecl>  121</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000103.?        </dsname></step><step><id>J0791588</id><name>STEP1   </name><procstep>        </procstep><ddname>XPRUNLOG</ddname><linect>  712</linect><lrecl>  137</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000104.?        </dsname></step></steps></job></responsedata></xatz_response></XATZRESP>
+01:33:32.654 LOG       HCIClient        Response received from Host. Message:Job information successfully returned JobId:
+01:33:32.656 LOG       CWCC Batch       Job information retrieved: 
+<job>
+  <name>HDDRXM0X</name>
+  <status>OUTPUT</status>
+  <returncode>CC=0000</returncode>
+  <steps>
+    <step>
+      <id>J0791588</id>
+      <name>JES2</name>
+      <procstep />
+      <ddname>JESMSGLG</ddname>
+      <linect>23</linect>
+      <lrecl>133</lrecl>
+      <dsname>HDDRXM0.HDDRXM0X.J0791588.D0000002.JESMSGLG</dsname>
+    </step>
+    <step>
+      <id>J0791588</id>
+      <name>JES2</name>
+      <procstep />
+      <ddname>JESJCL</ddname>
+      <linect>21</linect>
+      <lrecl>136</lrecl>
+      <dsname>HDDRXM0.HDDRXM0X.J0791588.D0000003.JESJCL</dsname>
+    </step>
+    <step>
+      <id>J0791588</id>
+      <name>JES2</name>
+      <procstep />
+      <ddname>JESYSMSG</ddname>
+      <linect>107</linect>
+      <lrecl>137</lrecl>
+      <dsname>HDDRXM0.HDDRXM0X.J0791588.D0000004.JESYSMSG</dsname>
+    </step>
+    <step>
+      <id>J0791588</id>
+      <name>STEP1</name>
+      <procstep />
+      <ddname>RPTFILE</ddname>
+      <linect>24</linect>
+      <lrecl>80</lrecl>
+      <dsname>HDDRXM0.HDDRXM0X.J0791588.D0000101.?</dsname>
+    </step>
+    <step>
+      <id>J0791588</id>
+      <name>STEP1</name>
+      <procstep />
+      <ddname>SYSOUT</ddname>
+      <linect>3</linect>
+      <lrecl>121</lrecl>
+      <dsname>HDDRXM0.HDDRXM0X.J0791588.D0000103.?</dsname>
+    </step>
+    <step>
+      <id>J0791588</id>
+      <name>STEP1</name>
+      <procstep />
+      <ddname>XPRUNLOG</ddname>
+      <linect>712</linect>
+      <lrecl>137</lrecl>
+      <dsname>HDDRXM0.HDDRXM0X.J0791588.D0000104.?</dsname>
+    </step>
+  </steps>
+</job>
+01:33:32.657 LOG       CWCC Batch       Spool file found for dd name: SYSOUT step name: STEP1
+01:33:32.657 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>JOBINFO</operation><runat>DAY</runat><jobid>J0791588</jobid></xatz_request></XATZREQ>
+01:33:32.725 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0000</resultcode><resultmessage>Job information successfully returned</resultmessage><jobid /><responsedata><job><name>HDDRXM0X</name><status>OUTPUT</status><returncode>CC=0000    </returncode><steps><step><id>J0791588</id><name>JES2    </name><procstep>        </procstep><ddname>JESMSGLG</ddname><linect>   23</linect><lrecl>  133</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000002.JESMSGLG </dsname></step><step><id>J0791588</id><name>JES2    </name><procstep>        </procstep><ddname>JESJCL  </ddname><linect>   21</linect><lrecl>  136</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000003.JESJCL   </dsname></step><step><id>J0791588</id><name>JES2    </name><procstep>        </procstep><ddname>JESYSMSG</ddname><linect>  107</linect><lrecl>  137</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000004.JESYSMSG </dsname></step><step><id>J0791588</id><name>STEP1   </name><procstep>        </procstep><ddname>RPTFILE </ddname><linect>   24</linect><lrecl>   80</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000101.?        </dsname></step><step><id>J0791588</id><name>STEP1   </name><procstep>        </procstep><ddname>SYSOUT  </ddname><linect>    3</linect><lrecl>  121</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000103.?        </dsname></step><step><id>J0791588</id><name>STEP1   </name><procstep>        </procstep><ddname>XPRUNLOG</ddname><linect>  712</linect><lrecl>  137</lrecl><dsname>HDDRXM0.HDDRXM0X.J0791588.D0000104.?        </dsname></step></steps></job></responsedata></xatz_response></XATZRESP>
+01:33:32.726 LOG       HCIClient        Response received from Host. Message:Job information successfully returned JobId:
+01:33:32.740 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>SPOOLGET</operation><runat>DAY</runat><spooldsn>HDDRXM0.HDDRXM0X.J0791588.D0000103.?</spooldsn><spoollrecl>121</spoollrecl><spoollinecnt>3</spoollinecnt><spoolfromcnt>1</spoolfromcnt></xatz_request></XATZREQ>
+01:33:32.793 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP><xatz_response><resultcode>0000</resultcode><resultmessage>Complete SPOOL data returned</resultmessage><responsedata><spoolfile><line t="D"><![CDATA[ CEE3740I The following messages pertain to the system default run-time options.]]></line><line t="D"><![CDATA[ CEE3768I The system default for the run-time option DEBUG could not be overridden.]]></line><line t="D"><![CDATA[ CEE3768I The system default for the run-time option TRAP could not be overridden.]]></line></spoolfile><spoolfromcnt>00001</spoolfromcnt><spoollinecnt>00003</spoollinecnt></responsedata></xatz_response></XATZRESP>
+01:33:32.793 LOG       HCIClient        Response received from Host. Message:Complete SPOOL data returned JobId:
+01:33:32.794 LOG       SpoolFile        Content from spool file:
+ CEE3740I The following messages pertain to the system default run-time options.
+ CEE3768I The system default for the run-time option DEBUG could not be overridden.
+ CEE3768I The system default for the run-time option TRAP could not be overridden.
+
+01:33:32.795 COMMENT   Engine           Test Scenario execution ended
