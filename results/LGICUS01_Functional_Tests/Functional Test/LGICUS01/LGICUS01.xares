@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XaUnitResult resultType="VERIFICATION_ERROR" containsSimulation="false">
-  <ExecutionId>5054c52c-7d69-43bc-9e43-892948318f7d</ExecutionId>
+<XaUnitResult resultType="SUCCESS" containsSimulation="false">
+  <ExecutionId>6da1699e-08e7-468c-84c9-3d671f1b2cd1</ExecutionId>
   <Message />
   <AST>
     <XaUnit xmlns="http://www.xact.dk/xatester/v/1" xmlns:data="http://www.xact.dk/xatester/data/v/1">
@@ -47,7 +47,7 @@
                   <ca-return-code>0</ca-return-code>
                   <ca-customer-num>1</ca-customer-num>
                   <ca-customer-request>
-                    <ca-first-name expected="Ralph" verifiedFalse="DataItem: /dfhcommarea/ca-customer-request/ca-first-name. Actual value is different from expected. Actual value: Andrew Expected value: Ralph">Andrew</ca-first-name>
+                    <ca-first-name expected="Andrew">Andrew</ca-first-name>
                     <ca-last-name expected="Pandy">Pandy</ca-last-name>
                     <ca-dob>1950-07-11</ca-dob>
                     <ca-house-name />
@@ -79,7 +79,7 @@
                   <ca-return-code>0</ca-return-code>
                   <ca-customer-num>2</ca-customer-num>
                   <ca-customer-request>
-                    <ca-first-name expected="Ralph" verifiedFalse="DataItem: /dfhcommarea/ca-customer-request/ca-first-name. Actual value is different from expected. Actual value: Scott Expected value: Ralph">Scott</ca-first-name>
+                    <ca-first-name expected="Scott">Scott</ca-first-name>
                     <ca-last-name expected="Tracey">Tracey</ca-last-name>
                     <ca-dob>1965-09-30</ca-dob>
                     <ca-house-name>Tracey Island</ca-house-name>
@@ -111,7 +111,7 @@
                   <ca-return-code>0</ca-return-code>
                   <ca-customer-num>1000163</ca-customer-num>
                   <ca-customer-request>
-                    <ca-first-name expected="Ralph" verifiedFalse="DataItem: /dfhcommarea/ca-customer-request/ca-first-name. Actual value is different from expected. Actual value: ERIC Expected value: Ralph">ERIC</ca-first-name>
+                    <ca-first-name expected="ERIC">ERIC</ca-first-name>
                     <ca-last-name expected="NOTEST">NOTEST</ca-last-name>
                     <ca-dob>2000-01-01</ca-dob>
                     <ca-house-name />
@@ -277,7 +277,7 @@ Non existing customer&#xD;
                     <ca-return-code />
                     <ca-customer-num>=loopThroughDb2Records.Row.CUSTOMERNUMBER</ca-customer-num>
                     <ca-customer-request>
-                      <ca-first-name expected="Ralph" />
+                      <ca-first-name expected="=loopThroughDb2Records.Row.FIRSTNAME" />
                       <ca-last-name expected="=loopThroughDb2Records.Row.LASTNAME" />
                       <ca-dob />
                       <ca-house-name />
@@ -380,6 +380,6 @@ Non existing customer&#xD;
       <ExternalResources />
     </ExecutionContext>
   </Context>
-  <Started>20191104-14-36-19</Started>
-  <Ended>20191104-14-36-56</Ended>
+  <Started>20200106-08-20-45</Started>
+  <Ended>20200106-08-21-20</Ended>
 </XaUnitResult>

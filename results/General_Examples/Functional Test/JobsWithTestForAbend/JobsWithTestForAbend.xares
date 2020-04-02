@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XaUnitResult resultType="SUCCESS" containsSimulation="false">
+  <ExecutionId>3fa9726f-8254-40fb-a24d-536d7b24a1ac</ExecutionId>
+  <Message />
+  <AST>
+    <XaUnit xmlns="http://www.xact.dk/xatester/v/1" xmlns:data="http://www.xact.dk/xatester/data/v/1">
+      <Test>
+        <Job name="Job" jobName="HDDRXM0J" jobLocation="JOBDEFINITION">
+          <Content><![CDATA[//*HDDRXM0X JOB ('EUDD,INTL'),'NUESSE',NOTIFY=&SYSUID,      
+//*             MSGLEVEL=(1,1),MSGCLASS=X,CLASS=A,REGION=6M 
+/*JOBPARM S=CWCC                                           
+//STEP1  EXEC PGM=CWXTCOB,PARM=00001                       
+//STEPLIB DD DISP=SHR,DSN=SALESSUP.RXN3.DEV1.LOAD          
+//        DD DISP=SHR,DSN=SALESSUP.RXN3.QA1.LOAD           
+//        DD DISP=SHR,DSN=SALESSUP.RXN3.STG.LOAD           
+//        DD DISP=SHR,DSN=SALESSUP.RXN3.PRD.LOAD           
+//EMPFILE  DD  DISP=SHR,DSN=HDDRXM0.DEMO.CWXTDATA
+//RPTFILE  DD  SYSOUT=*
+//SYSUDUMP DD  SYSOUT=*                                    
+//SYSOUT   DD  SYSOUT=*]]></Content>
+        </Job>
+        <SpoolFile ddname="JESMSGLG" stepname="JES2" ashex="false" id="spoolId"><![CDATA[1                       J E S 2  J O B  L O G  --  S Y S T E M  C W C C  --  N O D E  C W C C
+0
+ 10.22.56 J0809968 ---- WEDNESDAY, 27 NOV 2019 ----
+ 10.22.56 J0809968  IRR010I  USERID HDDRXM0  IS ASSIGNED TO THIS JOB.
+ 10.22.56 J0809968  ICH70001I HDDRXM0  LAST ACCESS AT 10:20:37 ON WEDNESDAY, NOVEMBER 27, 2019
+ 10.22.56 J0809968  $HASP373 HDDRXM0J STARTED - INIT 1    - CLASS A        - SYS CWCC
+ 10.22.56 J0809968  IEF403I HDDRXM0J - STARTED - TIME=10.22.56
+ 10.22.57 J0809968  +AB400A      ===== ABEND-AID =====  859
+    859                REPORT WRITTEN TO:
+    859                SYS2.CPWR.AA.REPORT.SHRDIR
+    859                REPORT NUMBER: 0015597
+    859                JOB-HDDRXM0J STEP-STEP1
+    859                LE COND CODE=CEE3207S / EXPECTED COMP CODE=S0C7
+    859                  Enter one of the following commands when in job output
+    859                  with AB400A message to be taken directly to report:
+    859                  AAH - for AbendAID Viewing Server AACCVS01 CWCC
+    859                  AA9 - for AbendAID Viewing Server AACCVS01 CWC2
+ 10.22.57 J0809968  +AB400B http://CWCC.NASA.CPWR.CORP:06952/AAVIEW?RPT=0015597
+ 10.22.58 J0809968  IEF450I HDDRXM0J STEP1 - ABEND=S0C7 U0000 REASON=00000007  861
+    861                     TIME=10.22.58
+ 10.22.58 J0809968  -                                      ----TIMINGS (MINUTES)-----                          -----PAGING COUNTS----
+ 10.22.58 J0809968  -STEPNAME PROCSTEP    RC   EXCP   CONN       TCB       SRB  CLOCK          SERV  WORKLOAD  PAGE  SWAP   VIO SWAPS
+ 10.22.58 J0809968  -STEP1             *S0C7   1322    116  0.003308  0.000099    0.0         49763  BATCH        0     0     0     0
+ 10.22.58 J0809968  -SCRREF            FLUSH      0      0  0.000000  0.000000    0.0                BATCH        0     0     0     0
+ 10.22.58 J0809968  IEF404I HDDRXM0J - ENDED - TIME=10.22.58
+ 10.22.58 J0809968  -HDDRXM0J ENDED.  NAME-TOPAZTST USERJOB     TOTAL TCB CPU TIME= 0.003308 TOTAL ELAPSED TIME=   0.0 SUBSYS=JES2
+ 10.22.58 J0809968  $HASP395 HDDRXM0J ENDED - ABEND=S0C7
+0------ JES2 JOB STATISTICS ------
+-  27 NOV 2019 JOB EXECUTION DATE
+-           31 CARDS READ
+-          477 SYSOUT PRINT RECORDS
+-            0 SYSOUT PUNCH RECORDS
+-           42 SYSOUT SPOOL KBYTES
+-         0.02 MINUTES EXECUTION TIME]]></SpoolFile>
+        <Verify name="Verify" haltExecution="false">
+          <Statement><![CDATA[spoolId.indexOf('HDDRXM0J ENDED - ABEND') != -1]]></Statement>
+        </Verify>
+      </Test>
+    </XaUnit>
+  </AST>
+  <Context>
+    <ExecutionContext xmlns="http://www.xact.dk/xatester/v/1" environment="5cee98c2d3142c1f90a4976d" logLevel="LOG" remote="false" useSimulations="true" uploadResult="false" timeout="300" readTimeout="30" debuggerType="NONE" jobInfoInterval="3" userid="hddrxm0">
+      <platformruntime database="DBCCCWCC" driver="com.ibm.db2.jcc.DB2Driver" uri="jdbc:db2://cwcc.compuware.com:546/${database}" environmenttype="BATCH" callinterface="NONE" />
+      <ExtensionData />
+      <XaUnit xmlns:data="http://www.xact.dk/xatester/data/v/1" path="JobsWithTestForAbend.xaunit">
+        <Test>
+          <Job name="Job" jobName="HDDRXM0J" jobLocation="JOBDEFINITION">
+            <Content><![CDATA[//*HDDRXM0X JOB ('EUDD,INTL'),'NUESSE',NOTIFY=&SYSUID,      
+//*             MSGLEVEL=(1,1),MSGCLASS=X,CLASS=A,REGION=6M 
+/*JOBPARM S=CWCC                                           
+//STEP1  EXEC PGM=CWXTCOB,PARM=00001                       
+//STEPLIB DD DISP=SHR,DSN=SALESSUP.RXN3.DEV1.LOAD          
+//        DD DISP=SHR,DSN=SALESSUP.RXN3.QA1.LOAD           
+//        DD DISP=SHR,DSN=SALESSUP.RXN3.STG.LOAD           
+//        DD DISP=SHR,DSN=SALESSUP.RXN3.PRD.LOAD           
+//EMPFILE  DD  DISP=SHR,DSN=HDDRXM0.DEMO.CWXTDATA
+//RPTFILE  DD  SYSOUT=*
+//SYSUDUMP DD  SYSOUT=*                                    
+//SYSOUT   DD  SYSOUT=*]]></Content>
+          </Job>
+          <SpoolFile ddname="JESMSGLG" stepname="JES2" ashex="false" id="spoolId" />
+          <Verify name="Verify" haltExecution="false">
+            <Statement><![CDATA[spoolId.indexOf('HDDRXM0J ENDED - ABEND') != -1]]></Statement>
+          </Verify>
+        </Test>
+      </XaUnit>
+      <ExternalResources />
+    </ExecutionContext>
+  </Context>
+  <Started>20191127-16-22-55</Started>
+  <Ended>20191127-16-23-01</Ended>
+</XaUnitResult>

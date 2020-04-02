@@ -34,7 +34,7 @@ Store expected RPFILE data locally and restore to mainframe</Description>
         </Scope>
       </Scope>
     </Scope>
-    <Scope name="Execute Test and Verify" disabled="false">
+    <Scope name="Execute Test" disabled="false">
       <Component id="cwxtcob" label="CWXTCOB" moduleName="CWXTCOB" programExitVerify="value &lt; 8" rollback="false">
         <Data>
           <parminfo>
@@ -53,6 +53,8 @@ Store expected RPFILE data locally and restore to mainframe</Description>
 //  DSN=${outDatasetNameActual}]]></Content>
         </Setup>
       </Component>
+    </Scope>
+    <Scope name="Verify" disabled="false">
       <ReadRemoteFile fileName="${outDatasetNameActual}" id="readOutDatasetActual" label="readOutDatasetActual" firstRecord="10" numberRecords="12" mDataDefinitionName="rptEmpDet" />
       <IterateData id="loopThroughOutput" referencedId="readOutDatasetActual" dataPath="">
         <Variable id="expectTotal">
@@ -72,6 +74,8 @@ tmpTotal.toFixed(2)]]></Statement>
           <Actual expression="loopThroughOutput.record['employee-dtl']['emp-dtl-total']" />
         </Verify>
       </IterateData>
+    </Scope>
+    <Scope name="Compare" disabled="false">
       <VerifyRemoteFile name="Compare" mode="COMPARE" haltExecution="false" mDataDefinition="rptHdr" actualPath="${outDatasetNameActual}" expectedPath="${outDatasetNameExpected}">
         <ExcludedFields>
           <Path>/employee-hdr1/emp-run-mm</Path>

@@ -11,15 +11,12 @@
       <Output name="USERID" />
       <Output name="STATUSCODE" />
     </SQLSelect>
-    <ReadRemoteFile fileName="HDDRXM0.DEMO.TTTFT.SQLOUT.EXPECT" id="remoteExpect" label="remoteExpect" firstRecord="1" numberRecords="10" mDataDefinitionName="xaemployee" />
+    <DataStore referencedId="SqlSelect" referencePath="" filePath="sqlOutActual.xml" />
+    <Variable id="actual" filePath="sqlOutActual.xml" />
+    <Variable id="expect" filePath="sqlOutExpect.xml" />
     <Verify name="Verify" haltExecution="false">
-      <Statement><![CDATA[SqlSelect.Row[0].RIDENT == remoteExpect.record[0].dclxaemployee.rident]]></Statement>
-    </Verify>
-    <Verify name="Verify" haltExecution="false">
-      <Statement><![CDATA[SqlSelect.Row[0].FIRSTNAME == remoteExpect.record[0].dclxaemployee.firstname]]></Statement>
-    </Verify>
-    <Verify name="Verify" haltExecution="false">
-      <Statement><![CDATA[SqlSelect.Row[1].STATUSCODE == remoteExpect.record[1].dclxaemployee.statuscode]]></Statement>
+      <Expected expression="actual" />
+      <Actual expression="expect" />
     </Verify>
   </Test>
   <MetaData>

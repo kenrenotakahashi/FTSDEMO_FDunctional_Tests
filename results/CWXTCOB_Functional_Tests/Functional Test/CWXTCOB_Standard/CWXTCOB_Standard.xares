@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XaUnitResult resultType="VERIFICATION_ERROR" containsSimulation="false">
-  <ExecutionId>be804487-ea0c-465a-836a-77a6db45b259</ExecutionId>
+  <ExecutionId>06077ab6-eee1-45db-878a-a0b0a5dbb3e9</ExecutionId>
   <Message />
   <AST>
     <XaUnit xmlns="http://www.xact.dk/xatester/v/1" xmlns:data="http://www.xact.dk/xatester/data/v/1">
@@ -936,7 +936,7 @@
             <Scope name="Skip" disabled="false" />
           </Scope>
         </Scope>
-        <Scope name="Execute Test and Verify" disabled="false">
+        <Scope name="Execute Test" disabled="false">
           <Component id="cwxtcob" label="CWXTCOB" moduleName="CWXTCOB" programExitVerify="value &lt; 8" programExit="0" rollback="false">
             <Data>
               <parminfo>
@@ -945,7 +945,8 @@
               </parminfo>
             </Data>
             <Setup>
-              <Content><![CDATA[//EMPFILE DD DISP=SHR,
+              <Content><![CDATA[//STEPLIB DD DISP=SHR,DSN=HDDRXM0.DEMO.LOAD.PDSE
+//EMPFILE DD DISP=SHR,
 //  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
 //        DD DISP=SHR,
 //  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.SALES
@@ -955,6 +956,8 @@
 //  DSN=HDDRXM0.DEMO.TTTFT.CWXTRPT]]></Content>
             </Setup>
           </Component>
+        </Scope>
+        <Scope name="Verify" disabled="false">
           <ReadRemoteFile fileName="HDDRXM0.DEMO.TTTFT.CWXTRPT" id="readOutDatasetActual" label="readOutDatasetActual" firstRecord="10" numberRecords="12" mDataDefinitionName="rptEmpDet">
             <Records>
               <Record>
@@ -972,7 +975,7 @@
                   <emp-dtl-slash2>/</emp-dtl-slash2>
                   <emp-dtl-hire-yy>81</emp-dtl-hire-yy>
                   <filler5 />
-                  <emp-dtl-yrs-of-service>37</emp-dtl-yrs-of-service>
+                  <emp-dtl-yrs-of-service>38</emp-dtl-yrs-of-service>
                   <filler6 />
                   <emp-dtl-wages>1083.00</emp-dtl-wages>
                   <filler7 />
@@ -998,7 +1001,7 @@
                   <emp-dtl-slash2>/</emp-dtl-slash2>
                   <emp-dtl-hire-yy>79</emp-dtl-hire-yy>
                   <filler5 />
-                  <emp-dtl-yrs-of-service>40</emp-dtl-yrs-of-service>
+                  <emp-dtl-yrs-of-service>41</emp-dtl-yrs-of-service>
                   <filler6 />
                   <emp-dtl-wages>1000.00</emp-dtl-wages>
                   <filler7 />
@@ -1024,7 +1027,7 @@
                   <emp-dtl-slash2>/</emp-dtl-slash2>
                   <emp-dtl-hire-yy>92</emp-dtl-hire-yy>
                   <filler5 />
-                  <emp-dtl-yrs-of-service>26</emp-dtl-yrs-of-service>
+                  <emp-dtl-yrs-of-service>27</emp-dtl-yrs-of-service>
                   <filler6 />
                   <emp-dtl-wages>750.00</emp-dtl-wages>
                   <filler7 />
@@ -1232,7 +1235,7 @@
                   <emp-dtl-slash2>/</emp-dtl-slash2>
                   <emp-dtl-hire-yy>81</emp-dtl-hire-yy>
                   <filler5 />
-                  <emp-dtl-yrs-of-service>37</emp-dtl-yrs-of-service>
+                  <emp-dtl-yrs-of-service>38</emp-dtl-yrs-of-service>
                   <filler6 />
                   <emp-dtl-wages>1000.00</emp-dtl-wages>
                   <filler7 />
@@ -1333,21 +1336,33 @@
               <Actual>6750.00</Actual>
             </Verify>
           </IterateData>
+        </Scope>
+        <Scope name="Compare" disabled="false">
           <VerifyRemoteFile name="Compare" mode="COMPARE" haltExecution="false" mDataDefinition="rptHdr" actualPath="HDDRXM0.DEMO.TTTFT.CWXTRPT" expectedPath="HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT">
             <ExcludedFields>
               <Path>/employee-hdr1/emp-run-mm</Path>
               <Path>/employee-hdr1/emp-run-dd</Path>
               <Path>/employee-hdr1/emp-run-yy</Path>
             </ExcludedFields>
-            <Result>&lt;root&gt;&lt;difs&gt;&#xD;&lt;dif&gt;&lt;newrno&gt;21&lt;/newrno&gt;&lt;oldrno&gt;21&lt;/oldrno&gt; &#xD;&lt;newchr&gt;&lt;![CDATA[ MARK JOHNSON    WEST    S   09/30/82   37    750.00     0.00   6000.00  6750.00]]&gt;&lt;/newchr&gt; &#xD;&lt;oldchr&gt;&lt;![CDATA[ MARK JOHNSON    WEST    S   09/30/82   36    750.00     0.00   6000.00  6750.00]]&gt;&lt;/oldchr&gt; &#xD;&lt;newhex1&gt;4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF&lt;/newhex1&gt; &#xD;&lt;newhex2&gt;0419201685265000065230000200009130182000370000750B00000000B000006000B00006750B00&lt;/newhex2&gt; &#xD;&lt;oldhex1&gt;4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF&lt;/oldhex1&gt; &#xD;&lt;oldhex2&gt;0419201685265000065230000200009130182000360000750B00000000B000006000B00006750B00&lt;/oldhex2&gt; &#xD;&lt;/dif&gt;&#xD;&lt;/difs&gt;&lt;/root&gt;</Result>
-            <ExpectedResult><![CDATA[Record number: 21
- MARK JOHNSON    WEST    S   09/30/82   36    750.00     0.00   6000.00  6750.00
-4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF
-0419201685265000065230000200009130182000360000750B00000000B000006000B00006750B00]]></ExpectedResult>
-            <ActualResult><![CDATA[Record number: 21
- MARK JOHNSON    WEST    S   09/30/82   37    750.00     0.00   6000.00  6750.00
-4DCDD4DDCDEDD4444ECEE4444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF
-0419201685265000065230000200009130182000370000750B00000000B000006000B00006750B00]]></ActualResult>
+            <Result>&lt;root&gt;&lt;difs&gt;&#xD;&lt;dif&gt;&lt;newrno&gt;11&lt;/newrno&gt;&lt;oldrno&gt;11&lt;/oldrno&gt; &#xD;&lt;newchr&gt;&lt;![CDATA[ TED NESSMAN     NORTH   S   01/30/79   41   1000.00     0.00      0.00  1000.00]]&gt;&lt;/newchr&gt; &#xD;&lt;oldchr&gt;&lt;![CDATA[ TED NESSMAN     NORTH   S   01/30/79   40   1000.00     0.00      0.00  1000.00]]&gt;&lt;/oldchr&gt; &#xD;&lt;newhex1&gt;4ECC4DCEEDCD44444DDDEC444E444FF6FF6FF444FF444FFFF4FF44444F4FF444444F4FF44FFFF4FF&lt;/newhex1&gt; &#xD;&lt;newhex2&gt;0354055224150000056938000200001130179000410001000B00000000B000000000B00001000B00&lt;/newhex2&gt; &#xD;&lt;oldhex1&gt;4ECC4DCEEDCD44444DDDEC444E444FF6FF6FF444FF444FFFF4FF44444F4FF444444F4FF44FFFF4FF&lt;/oldhex1&gt; &#xD;&lt;oldhex2&gt;0354055224150000056938000200001130179000400001000B00000000B000000000B00001000B00&lt;/oldhex2&gt; &#xD;&lt;/dif&gt;&#xD;&lt;dif&gt;&lt;newrno&gt;12&lt;/newrno&gt;&lt;oldrno&gt;12&lt;/oldrno&gt; &#xD;&lt;newchr&gt;&lt;![CDATA[ ROY GARDNER     NORTH   S   12/31/92   27    750.00     0.00   3300.00  4050.00]]&gt;&lt;/newchr&gt; &#xD;&lt;oldchr&gt;&lt;![CDATA[ ROY GARDNER     NORTH   S   12/31/92   26    750.00     0.00   3300.00  4050.00]]&gt;&lt;/oldchr&gt; &#xD;&lt;newhex1&gt;4DDE4CCDCDCD44444DDDEC444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF&lt;/newhex1&gt; &#xD;&lt;newhex2&gt;0968071945590000056938000200012131192000270000750B00000000B000003300B00004050B00&lt;/newhex2&gt; &#xD;&lt;oldhex1&gt;4DDE4CCDCDCD44444DDDEC444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF&lt;/oldhex1&gt; &#xD;&lt;oldhex2&gt;0968071945590000056938000200012131192000260000750B00000000B000003300B00004050B00&lt;/oldhex2&gt; &#xD;&lt;/dif&gt;&#xD;&lt;/difs&gt;&lt;/root&gt;</Result>
+            <ExpectedResult><![CDATA[Record number: 11
+ TED NESSMAN     NORTH   S   01/30/79   40   1000.00     0.00      0.00  1000.00
+4ECC4DCEEDCD44444DDDEC444E444FF6FF6FF444FF444FFFF4FF44444F4FF444444F4FF44FFFF4FF
+0354055224150000056938000200001130179000400001000B00000000B000000000B00001000B00
+
+Record number: 12
+ ROY GARDNER     NORTH   S   12/31/92   26    750.00     0.00   3300.00  4050.00
+4DDE4CCDCDCD44444DDDEC444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF
+0968071945590000056938000200012131192000260000750B00000000B000003300B00004050B00]]></ExpectedResult>
+            <ActualResult><![CDATA[Record number: 11
+ TED NESSMAN     NORTH   S   01/30/79   41   1000.00     0.00      0.00  1000.00
+4ECC4DCEEDCD44444DDDEC444E444FF6FF6FF444FF444FFFF4FF44444F4FF444444F4FF44FFFF4FF
+0354055224150000056938000200001130179000410001000B00000000B000000000B00001000B00
+
+Record number: 12
+ ROY GARDNER     NORTH   S   12/31/92   27    750.00     0.00   3300.00  4050.00
+4DDE4CCDCDCD44444DDDEC444E444FF6FF6FF444FF4444FFF4FF44444F4FF444FFFF4FF44FFFF4FF
+0968071945590000056938000200012131192000270000750B00000000B000003300B00004050B00]]></ActualResult>
           </VerifyRemoteFile>
         </Scope>
       </Test>
@@ -1367,20 +1382,20 @@
     <ExecutionContext xmlns="http://www.xact.dk/xatester/v/1" environment="5cee98c2d3142c1f90a4976d" logLevel="LOG" remote="false" useSimulations="true" uploadResult="false" timeout="300" readTimeout="30" debuggerType="NONE" jobInfoInterval="3" userid="hddrxm0">
       <platformruntime database="DBCCCWCC" driver="com.ibm.db2.jcc.DB2Driver" uri="jdbc:db2://cwcc.compuware.com:546/${database}" environmenttype="BATCH" callinterface="NONE" />
       <ExtensionData />
-      <ExtensionData componentName="cwxtcob" componentId="5d4d2aec423da3164cab5cac">
+      <ExtensionData componentName="cwxtcob" componentId="5d4d2a7c423da3164cab5ca6">
         <Parameter key="sourcelibrary">
-          <Value>SALESSUP.RXN3.DEV3.COB</Value>
+          <Value>SALESSUP.RXN3.DEV1.COB</Value>
         </Parameter>
         <Parameter key="loadlibraries">
-          <Value>SALESSUP.RXN3.QA3.LOAD</Value>
+          <Value>SALESSUP.RXN3.QA1.LOAD</Value>
           <Value>SALESSUP.RXN3.STG.LOAD</Value>
           <Value>SALESSUP.RXN3.PRD.LOAD</Value>
         </Parameter>
         <Parameter key="loadlibrary">
-          <Value>SALESSUP.RXN3.DEV3.LOAD</Value>
+          <Value>SALESSUP.RXN3.DEV1.LOAD</Value>
         </Parameter>
         <Parameter key="sourcelibraries">
-          <Value>SALESSUP.RXN3.DEV3.CPY</Value>
+          <Value>SALESSUP.RXN3.DEV1.COPY</Value>
         </Parameter>
         <Parameter key="callinterface">
           <Value>NONE</Value>
@@ -1424,7 +1439,7 @@ Store expected RPFILE data locally and restore to mainframe</Description>
               </Scope>
             </Scope>
           </Scope>
-          <Scope name="Execute Test and Verify" disabled="false">
+          <Scope name="Execute Test" disabled="false">
             <Component id="cwxtcob" label="CWXTCOB" moduleName="CWXTCOB" programExitVerify="value &lt; 8" rollback="false">
               <Data>
                 <parminfo>
@@ -1433,7 +1448,8 @@ Store expected RPFILE data locally and restore to mainframe</Description>
                 </parminfo>
               </Data>
               <Setup>
-                <Content><![CDATA[//EMPFILE DD DISP=SHR,
+                <Content><![CDATA[//STEPLIB DD DISP=SHR,DSN=HDDRXM0.DEMO.LOAD.PDSE
+//EMPFILE DD DISP=SHR,
 //  DSN=${empInDatasetNameHourly}
 //        DD DISP=SHR,
 //  DSN=${empInDatasetNameSales}
@@ -1443,6 +1459,8 @@ Store expected RPFILE data locally and restore to mainframe</Description>
 //  DSN=${outDatasetNameActual}]]></Content>
               </Setup>
             </Component>
+          </Scope>
+          <Scope name="Verify" disabled="false">
             <ReadRemoteFile fileName="${outDatasetNameActual}" id="readOutDatasetActual" label="readOutDatasetActual" firstRecord="10" numberRecords="12" mDataDefinitionName="rptEmpDet" />
             <IterateData id="loopThroughOutput" referencedId="readOutDatasetActual" dataPath="">
               <Variable id="expectTotal">
@@ -1462,6 +1480,8 @@ tmpTotal.toFixed(2)]]></Statement>
                 <Actual expression="loopThroughOutput.record['employee-dtl']['emp-dtl-total']" />
               </Verify>
             </IterateData>
+          </Scope>
+          <Scope name="Compare" disabled="false">
             <VerifyRemoteFile name="Compare" mode="COMPARE" haltExecution="false" mDataDefinition="rptHdr" actualPath="${outDatasetNameActual}" expectedPath="${outDatasetNameExpected}">
               <ExcludedFields>
                 <Path>/employee-hdr1/emp-run-mm</Path>
@@ -2533,6 +2553,6 @@ tmpTotal.toFixed(2)]]></Statement>
       </ExternalResources>
     </ExecutionContext>
   </Context>
-  <Started>20191002-19-48-14</Started>
-  <Ended>20191002-19-48-38</Ended>
+  <Started>20200209-11-29-51</Started>
+  <Ended>20200209-11-30-38</Ended>
 </XaUnitResult>

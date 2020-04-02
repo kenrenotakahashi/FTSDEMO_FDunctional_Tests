@@ -1,5 +1,5 @@
-13:35:15.927 COMMENT   Engine           Test Scenario execution started
-13:35:15.927 INFO      Engine           Using context settings:
+13:34:39.777 COMMENT   Engine           Test Scenario execution started
+13:34:39.777 INFO      Engine           Using context settings:
   Engine Version       : 19.6.1
   Environment id                : 5cee98c2d3142c1f90a4976d
   Environment type              : Batch
@@ -13,29 +13,29 @@
   Encoding                      : ISO8859-1
   Codepage                      : IBM-1047
   Host user Id                  : hddrxm0
-13:35:15.927 INFO      Engine           Setting variables from context and context data extensions
-13:35:15.927 INFO      Engine             id: environmentId      value: 5cee98c2d3142c1f90a4976d
-13:35:15.927 INFO      Engine             id: environmentType    value: BATCH
-13:35:15.927 INFO      Engine             id: userId             value: hddrxm0
-13:35:15.933 INFO      Scope            Interpreting Scope name:Initialize
-13:35:15.933 INFO      Scope            Interpreting Scope name:Variable Set Up
-13:35:15.933 INFO      Variable         Interpreting Variable id:empInDatasetNameHourly
-13:35:15.933 LOG       Variable         Resolved data:
+13:34:39.777 INFO      Engine           Setting variables from context and context data extensions
+13:34:39.777 INFO      Engine             id: environmentId      value: 5cee98c2d3142c1f90a4976d
+13:34:39.777 INFO      Engine             id: environmentType    value: BATCH
+13:34:39.777 INFO      Engine             id: userId             value: hddrxm0
+13:34:39.802 INFO      Scope            Interpreting Scope name:Initialize
+13:34:39.802 INFO      Scope            Interpreting Scope name:Variable Set Up
+13:34:39.802 INFO      Variable         Interpreting Variable id:empInDatasetNameHourly
+13:34:39.803 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
-13:35:15.933 INFO      Variable         Interpreting Variable id:empInDatasetNameSales
-13:35:15.933 LOG       Variable         Resolved data:
+13:34:39.804 INFO      Variable         Interpreting Variable id:empInDatasetNameSales
+13:34:39.804 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTDATA.SALES
-13:35:15.933 INFO      Variable         Interpreting Variable id:empInDatasetNameMgmt
-13:35:15.933 LOG       Variable         Resolved data:
+13:34:39.804 INFO      Variable         Interpreting Variable id:empInDatasetNameMgmt
+13:34:39.804 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTDATA.MGMT
-13:35:15.933 INFO      Variable         Interpreting Variable id:outDatasetNameActual
-13:35:15.933 LOG       Variable         Resolved data:
+13:34:39.804 INFO      Variable         Interpreting Variable id:outDatasetNameActual
+13:34:39.804 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTRPT
-13:35:15.933 INFO      Variable         Interpreting Variable id:outDatasetNameExpected
-13:35:15.933 LOG       Variable         Resolved data:
+13:34:39.804 INFO      Variable         Interpreting Variable id:outDatasetNameExpected
+13:34:39.804 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
-13:35:15.933 INFO      Variable         Interpreting Variable id:empInRecordsHourly dataFile:Input_Data/employee_input_file_hourly.xml
-13:35:15.934 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_hourly.xml
+13:34:39.804 INFO      Variable         Interpreting Variable id:empInRecordsHourly dataFile:Input_Data/employee_input_file_hourly.xml
+13:34:39.808 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_hourly.xml
 <record>
   <employee-work-area>
     <wa-emp-num>3431</wa-emp-num>
@@ -111,8 +111,8 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <filler1></filler1>
   </employee-work-area>
 </record>
-13:35:15.934 INFO      Variable         Interpreting Variable id:empInRecordsSales dataFile:Input_Data/employee_input_file_sales.xml
-13:35:15.935 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_sales.xml
+13:34:39.809 INFO      Variable         Interpreting Variable id:empInRecordsSales dataFile:Input_Data/employee_input_file_sales.xml
+13:34:39.813 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_sales.xml
 <record>
   <employee-work-area>
     <wa-emp-num>1431</wa-emp-num>
@@ -338,8 +338,8 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <filler1></filler1>
   </employee-work-area>
 </record>
-13:35:15.935 INFO      Variable         Interpreting Variable id:empInRecordsMgmt dataFile:Input_Data/employee_input_file_mgmt.xml
-13:35:15.936 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_mgmt.xml
+13:34:39.814 INFO      Variable         Interpreting Variable id:empInRecordsMgmt dataFile:Input_Data/employee_input_file_mgmt.xml
+13:34:39.816 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_mgmt.xml
 <record>
   <employee-work-area>
     <wa-emp-num>2136</wa-emp-num>
@@ -436,8 +436,8 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <filler1></filler1>
   </employee-work-area>
 </record>
-13:35:15.936 INFO      Variable         Interpreting Variable id:rptExpectedDetailRecords dataFile:Output_Data/report_file_expected_detail.xml
-13:35:15.938 LOG       Variable         Resolved data items from file Output_Data/report_file_expected_detail.xml
+13:34:39.816 INFO      Variable         Interpreting Variable id:rptExpectedDetailRecords dataFile:Output_Data/report_file_expected_detail.xml
+13:34:39.832 LOG       Variable         Resolved data items from file Output_Data/report_file_expected_detail.xml
 <record>
   <employee-dtl>
     <filler1></filler1>
@@ -828,8 +828,8 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <emp-dtl-total>45366.00</emp-dtl-total>
   </employee-dtl>
 </record>
-13:35:15.939 INFO      Variable         Interpreting Variable id:rptExpectedFullRecords dataFile:Output_Data/report_file_expected_unformatted.xml
-13:35:15.940 LOG       Variable         Resolved data items from file Output_Data/report_file_expected_unformatted.xml
+13:34:39.834 INFO      Variable         Interpreting Variable id:rptExpectedFullRecords dataFile:Output_Data/report_file_expected_unformatted.xml
+13:34:39.837 LOG       Variable         Resolved data items from file Output_Data/report_file_expected_unformatted.xml
 <record>
   <rpt-unformatted>
     <filler1></filler1>
@@ -950,30 +950,30 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <filler1>'    TOTAL                                                               45366.00'</filler1>
   </rpt-unformatted>
 </record>
-13:35:15.940 INFO      Scope            Scope completed
-13:35:15.940 INFO      Scope            Interpreting Scope name:Dataset Setup
-13:35:15.940 INFO      WriteRemoteFile  Interpreting WriteRemoteFile
-13:35:15.940 INFO      WriteRemoteFile  Variable substitution found in fileName name
-13:35:15.940 INFO      WriteRemoteFile  Actual fileName name is now:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
-13:35:15.940 INFO      WriteRemoteFile  Finding referenced records from the id: empInRecordsHourly
-13:35:15.940 LOG       WriteRemoteFile  Verifies that records conform to the MDataDefinition
-13:35:15.940 INFO      WriteRemoteFile  Number of records to write:3
-13:35:15.940 INFO      WriteRemoteFile    File name             : HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
-13:35:15.940 INFO      WriteRemoteFile    Record length         : 80
-13:35:15.940 INFO      WriteRemoteFile    Record format         : FB
-13:35:15.940 INFO      WriteRemoteFile    Block size            : 27920
-13:35:15.940 INFO      WriteRemoteFile    Volumn name           : PCC006
-13:35:15.940 INFO      WriteRemoteFile    Unit name             : 
-13:35:15.940 INFO      WriteRemoteFile    Unit type             : TRK
-13:35:15.940 INFO      WriteRemoteFile    Primary allocation    : 5
-13:35:15.940 INFO      WriteRemoteFile    Secondary allocation  : 5
-13:35:15.940 INFO      WriteRemoteFile    Directory block count : 0
-13:35:15.940 INFO      WriteRemoteFile    Dataset type          : NONE
-13:35:15.940 INFO      WriteRemoteFile    Disposition           : Old
-13:35:15.940 INFO      WriteRemoteFile  Sending Write dataset request to Host 
-13:35:16.099 ERROR     CWCC Batch       Error initializing Dirs: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
-13:35:16.099 ERROR     Employee Indataset Hourly Unable to write dataset:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY at the host. com.compuware.totaltest.common.hci.api.exceptions.HciServicesFileIOException: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
-13:35:16.099 ERROR     Employee Indataset Hourly java.io.IOException: com.compuware.totaltest.common.hci.api.exceptions.HciServicesFileIOException: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
+13:34:39.837 INFO      Scope            Scope completed
+13:34:39.837 INFO      Scope            Interpreting Scope name:Dataset Setup
+13:34:39.837 INFO      WriteRemoteFile  Interpreting WriteRemoteFile
+13:34:39.839 INFO      WriteRemoteFile  Variable substitution found in fileName name
+13:34:39.839 INFO      WriteRemoteFile  Actual fileName name is now:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
+13:34:39.839 INFO      WriteRemoteFile  Finding referenced records from the id: empInRecordsHourly
+13:34:39.839 LOG       WriteRemoteFile  Verifies that records conform to the MDataDefinition
+13:34:39.840 INFO      WriteRemoteFile  Number of records to write:3
+13:34:39.840 INFO      WriteRemoteFile    File name             : HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
+13:34:39.840 INFO      WriteRemoteFile    Record length         : 80
+13:34:39.840 INFO      WriteRemoteFile    Record format         : FB
+13:34:39.840 INFO      WriteRemoteFile    Block size            : 27920
+13:34:39.840 INFO      WriteRemoteFile    Volumn name           : PCC006
+13:34:39.840 INFO      WriteRemoteFile    Unit name             : 
+13:34:39.840 INFO      WriteRemoteFile    Unit type             : TRK
+13:34:39.840 INFO      WriteRemoteFile    Primary allocation    : 5
+13:34:39.840 INFO      WriteRemoteFile    Secondary allocation  : 5
+13:34:39.840 INFO      WriteRemoteFile    Directory block count : 0
+13:34:39.840 INFO      WriteRemoteFile    Dataset type          : NONE
+13:34:39.840 INFO      WriteRemoteFile    Disposition           : Old
+13:34:39.860 INFO      WriteRemoteFile  Sending Write dataset request to Host 
+13:34:40.052 ERROR     CWCC Batch       Error initializing Dirs: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
+13:34:40.052 ERROR     Employee Indataset Hourly Unable to write dataset:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY at the host. com.compuware.totaltest.common.hci.api.exceptions.HciServicesFileIOException: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
+13:34:40.053 ERROR     Employee Indataset Hourly java.io.IOException: com.compuware.totaltest.common.hci.api.exceptions.HciServicesFileIOException: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
 	at com.compuware.xatester.xaunit.platforms.strategies.HCIHostCommunicator.initiate(HCIHostCommunicator.java:136)
 	at com.compuware.xatester.xaunit.platforms.strategies.AbstractSocketandFTPStrategy.initiate(AbstractSocketandFTPStrategy.java:73)
 	at com.compuware.xatester.xaunit.platforms.HostProcess.execute(HostProcess.java:230)
@@ -1001,8 +1001,8 @@ Caused by: com.compuware.ecc.core.exceptions.EccException: Unable to check for e
 	at com.compuware.totaltest.common.hci.resource.HciResourceServicesUSSFiles.fileExists(HciResourceServicesUSSFiles.java:104)
 	... 17 more
 
-13:35:16.099 ERROR     Engine           Unable to write dataset:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY at the host. 
-13:35:16.099 ERROR     Engine           An error occurred. Now stopping the execution.
-13:35:16.099 ERROR     Scope            Scope completed unexpectedly. A child component failed.
-13:35:16.099 ERROR     Scope            Scope completed unexpectedly. A child component failed.
-13:35:16.099 COMMENT   Engine           Test Scenario execution ended
+13:34:40.053 ERROR     Engine           Unable to write dataset:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY at the host. 
+13:34:40.053 ERROR     Engine           An error occurred. Now stopping the execution.
+13:34:40.053 ERROR     Scope            Scope completed unexpectedly. A child component failed.
+13:34:40.053 ERROR     Scope            Scope completed unexpectedly. A child component failed.
+13:34:40.053 COMMENT   Engine           Test Scenario execution ended
