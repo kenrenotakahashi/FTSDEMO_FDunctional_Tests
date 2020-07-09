@@ -1,0 +1,77 @@
+12:29:21.043 COMMENT   Engine           Test Scenario execution started
+12:29:21.043 INFO      Engine           Using context settings:
+  Engine Version       : 20.2
+  Environment id                : 5cee990bd3142c1f90a4976f
+  Environment type              : Cics
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : cwcc.compuware.com
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : hddrxm0
+  Use Repository Server         : true
+12:29:21.043 INFO      Engine           Setting variables from context and context data extensions
+12:29:21.043 INFO      Engine             id: environmentId      value: 5cee990bd3142c1f90a4976f
+12:29:21.043 INFO      Engine             id: environmentType    value: CICS
+12:29:21.043 INFO      Engine             id: userId             value: HDDRXM0
+12:29:21.043 INFO      Engine             id: accountingInfo     value: 
+12:29:21.044 INFO      Scope            Interpreting Scope name:Initialize
+12:29:21.045 INFO      Variable         Interpreting Variable id:customerInputData dataFile:Input_Data/customer_add_input.xml
+12:29:21.045 LOG       Variable         Resolved data items from file Input_Data/customer_add_input.xml
+<record>
+  <dfhcommarea-customer>
+    <ca-request-id></ca-request-id>
+    <ca-return-code></ca-return-code>
+    <ca-customer-num>1</ca-customer-num>
+    <ca-customer-request>
+      <ca-first-name>Ralph</ca-first-name>
+      <ca-last-name>Nuesse</ca-last-name>
+      <ca-dob>1970-02-01</ca-dob>
+      <ca-house-name>My Home Street</ca-house-name>
+      <ca-house-num>666</ca-house-num>
+      <ca-postcode>12345</ca-postcode>
+      <ca-num-policies></ca-num-policies>
+      <ca-phone-mobile>0000012345</ca-phone-mobile>
+      <ca-phone-home>0000012345</ca-phone-home>
+      <ca-email-address>RN@ACME.COM</ca-email-address>
+      <ca-national-id-nbr>12345678901234567890</ca-national-id-nbr>
+      <ca-nin-type>SS</ca-nin-type>
+      <ca-street-address>MY STREET 1</ca-street-address>
+      <ca-city>CITY</ca-city>
+      <ca-state>ST</ca-state>
+      <ca-country-code></ca-country-code>
+      <ca-sales-territory>EMEA</ca-sales-territory>
+      <ca-customer-pfkey></ca-customer-pfkey>
+      <ca-customer-begin></ca-customer-begin>
+      <ca-customer-end></ca-customer-end>
+      <ca-policy-data></ca-policy-data>
+    </ca-customer-request>
+  </dfhcommarea-customer>
+</record>
+12:29:21.046 INFO      Scope            Scope completed
+12:29:21.046 INFO      Scope            Interpreting Scope name:Execute
+12:29:21.046 INFO      Component        Interpreting Component: LGACUS01 program:LGACUS01
+12:29:21.047 INFO      Component        Component will be executed in CICS and top level element definitions are:
+12:29:21.047 INFO      Component          Element: dfhcommarea Area type:DEFAULT
+12:29:21.068 LOG       CWCC CICS        Component Runtime Settings:
+12:29:21.069 LOG       CWCC CICS          Load libraries :
+12:29:21.069 LOG       CWCC CICS          Optional main Load library:GENAPP.ISPW.PROD.LOAD
+12:29:21.069 LOG       CWCC CICS          Listing libraries         :
+12:29:21.069 LOG       CWCC CICS          SysDebug libraries        :
+12:29:21.069 LOG       CWCC CICS          DB2 Subsystem ID          :DBCC
+12:29:21.069 LOG       CWCC CICS          DB2 plan                  :GENAONE
+12:29:21.069 LOG       CWCC CICS          APPLID                    :HCCAC013
+12:29:21.069 LOG       CWCC CICS          Channel                   :
+12:29:21.069 LOG       CWCC CICS          Call interface            :CICSLINK
+12:29:21.069 LOG       CWCC CICS          Debugger type             :NONE
+12:29:21.069 LOG       CWCC CICS          Component type            :COBOL
+12:29:21.080 INFO      CWCC CICS        Sending Module execution request to Host for module:LGACUS01 rollback:false
+12:29:21.082 ERROR     CWCC CICS        Error initializing Dirs: Unable to determine if file /u/xatester/hddrxm0 exists. Reason com.compuware.totaltest.common.hci.api.exceptions.HciServicesNotConnectedException: Unable to perform Resource Service request: "FileExists". Reason: Client is not connected.
+12:29:21.085 ERROR     Engine           Unable to execute the module:LGACUS01 at the host. Unable to initiate Server connection to server cwcc.compuware.com port:16196. com.compuware.totaltest.common.hci.api.exceptions.HciServicesFileIOException: Unable to determine if file /u/xatester/hddrxm0 exists. Reason com.compuware.totaltest.common.hci.api.exceptions.HciServicesNotConnectedException: Unable to perform Resource Service request: "FileExists". Reason: Client is not connected.
+12:29:21.086 ERROR     Engine           An error occurred. Now stopping the execution.
+12:29:21.086 ERROR     Scope            Scope completed unexpectedly. A child component failed.
+12:29:21.086 COMMENT   Engine           Test Scenario execution ended

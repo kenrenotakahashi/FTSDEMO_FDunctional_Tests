@@ -1,6 +1,6 @@
-13:35:15.927 COMMENT   Engine           Test Scenario execution started
-13:35:15.927 INFO      Engine           Using context settings:
-  Engine Version       : 19.6.1
+18:04:43.866 COMMENT   Engine           Test Scenario execution started
+18:04:43.869 INFO      Engine           Using context settings:
+  Engine Version       : 20.2
   Environment id                : 5cee98c2d3142c1f90a4976d
   Environment type              : Batch
   Operating system              : ZOS
@@ -13,29 +13,31 @@
   Encoding                      : ISO8859-1
   Codepage                      : IBM-1047
   Host user Id                  : hddrxm0
-13:35:15.927 INFO      Engine           Setting variables from context and context data extensions
-13:35:15.927 INFO      Engine             id: environmentId      value: 5cee98c2d3142c1f90a4976d
-13:35:15.927 INFO      Engine             id: environmentType    value: BATCH
-13:35:15.927 INFO      Engine             id: userId             value: hddrxm0
-13:35:15.933 INFO      Scope            Interpreting Scope name:Initialize
-13:35:15.933 INFO      Scope            Interpreting Scope name:Variable Set Up
-13:35:15.933 INFO      Variable         Interpreting Variable id:empInDatasetNameHourly
-13:35:15.933 LOG       Variable         Resolved data:
+  Use Repository Server         : true
+18:04:43.870 INFO      Engine           Setting variables from context and context data extensions
+18:04:43.870 INFO      Engine             id: environmentId      value: 5cee98c2d3142c1f90a4976d
+18:04:43.870 INFO      Engine             id: environmentType    value: BATCH
+18:04:43.870 INFO      Engine             id: userId             value: HDDRXM0
+18:04:43.870 INFO      Engine             id: accountingInfo     value: 
+18:04:43.874 INFO      Scope            Interpreting Scope name:Initialize
+18:04:43.874 INFO      Scope            Interpreting Scope name:Variable Set Up
+18:04:43.875 INFO      Variable         Interpreting Variable id:empInDatasetNameHourly
+18:04:43.877 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
-13:35:15.933 INFO      Variable         Interpreting Variable id:empInDatasetNameSales
-13:35:15.933 LOG       Variable         Resolved data:
+18:04:43.879 INFO      Variable         Interpreting Variable id:empInDatasetNameSales
+18:04:43.879 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTDATA.SALES
-13:35:15.933 INFO      Variable         Interpreting Variable id:empInDatasetNameMgmt
-13:35:15.933 LOG       Variable         Resolved data:
+18:04:43.879 INFO      Variable         Interpreting Variable id:empInDatasetNameMgmt
+18:04:43.879 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTDATA.MGMT
-13:35:15.933 INFO      Variable         Interpreting Variable id:outDatasetNameActual
-13:35:15.933 LOG       Variable         Resolved data:
+18:04:43.880 INFO      Variable         Interpreting Variable id:outDatasetNameActual
+18:04:43.880 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTRPT
-13:35:15.933 INFO      Variable         Interpreting Variable id:outDatasetNameExpected
-13:35:15.933 LOG       Variable         Resolved data:
+18:04:43.880 INFO      Variable         Interpreting Variable id:outDatasetNameExpected
+18:04:43.880 LOG       Variable         Resolved data:
 HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
-13:35:15.933 INFO      Variable         Interpreting Variable id:empInRecordsHourly dataFile:Input_Data/employee_input_file_hourly.xml
-13:35:15.934 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_hourly.xml
+18:04:43.880 INFO      Variable         Interpreting Variable id:empInRecordsHourly dataFile:Input_Data/employee_input_file_hourly.xml
+18:04:43.882 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_hourly.xml
 <record>
   <employee-work-area>
     <wa-emp-num>3431</wa-emp-num>
@@ -111,8 +113,8 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <filler1></filler1>
   </employee-work-area>
 </record>
-13:35:15.934 INFO      Variable         Interpreting Variable id:empInRecordsSales dataFile:Input_Data/employee_input_file_sales.xml
-13:35:15.935 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_sales.xml
+18:04:43.882 INFO      Variable         Interpreting Variable id:empInRecordsSales dataFile:Input_Data/employee_input_file_sales.xml
+18:04:43.888 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_sales.xml
 <record>
   <employee-work-area>
     <wa-emp-num>1431</wa-emp-num>
@@ -338,8 +340,8 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <filler1></filler1>
   </employee-work-area>
 </record>
-13:35:15.935 INFO      Variable         Interpreting Variable id:empInRecordsMgmt dataFile:Input_Data/employee_input_file_mgmt.xml
-13:35:15.936 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_mgmt.xml
+18:04:43.889 INFO      Variable         Interpreting Variable id:empInRecordsMgmt dataFile:Input_Data/employee_input_file_mgmt.xml
+18:04:43.891 LOG       Variable         Resolved data items from file Input_Data/employee_input_file_mgmt.xml
 <record>
   <employee-work-area>
     <wa-emp-num>2136</wa-emp-num>
@@ -436,8 +438,8 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <filler1></filler1>
   </employee-work-area>
 </record>
-13:35:15.936 INFO      Variable         Interpreting Variable id:rptExpectedDetailRecords dataFile:Output_Data/report_file_expected_detail.xml
-13:35:15.938 LOG       Variable         Resolved data items from file Output_Data/report_file_expected_detail.xml
+18:04:43.892 INFO      Variable         Interpreting Variable id:rptExpectedDetailRecords dataFile:Output_Data/report_file_expected_detail.xml
+18:04:43.899 LOG       Variable         Resolved data items from file Output_Data/report_file_expected_detail.xml
 <record>
   <employee-dtl>
     <filler1></filler1>
@@ -828,8 +830,8 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <emp-dtl-total>45366.00</emp-dtl-total>
   </employee-dtl>
 </record>
-13:35:15.939 INFO      Variable         Interpreting Variable id:rptExpectedFullRecords dataFile:Output_Data/report_file_expected_unformatted.xml
-13:35:15.940 LOG       Variable         Resolved data items from file Output_Data/report_file_expected_unformatted.xml
+18:04:43.900 INFO      Variable         Interpreting Variable id:rptExpectedFullRecords dataFile:Output_Data/report_file_expected_unformatted.xml
+18:04:43.905 LOG       Variable         Resolved data items from file Output_Data/report_file_expected_unformatted.xml
 <record>
   <rpt-unformatted>
     <filler1></filler1>
@@ -950,59 +952,184 @@ HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT
     <filler1>'    TOTAL                                                               45366.00'</filler1>
   </rpt-unformatted>
 </record>
-13:35:15.940 INFO      Scope            Scope completed
-13:35:15.940 INFO      Scope            Interpreting Scope name:Dataset Setup
-13:35:15.940 INFO      WriteRemoteFile  Interpreting WriteRemoteFile
-13:35:15.940 INFO      WriteRemoteFile  Variable substitution found in fileName name
-13:35:15.940 INFO      WriteRemoteFile  Actual fileName name is now:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
-13:35:15.940 INFO      WriteRemoteFile  Finding referenced records from the id: empInRecordsHourly
-13:35:15.940 LOG       WriteRemoteFile  Verifies that records conform to the MDataDefinition
-13:35:15.940 INFO      WriteRemoteFile  Number of records to write:3
-13:35:15.940 INFO      WriteRemoteFile    File name             : HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
-13:35:15.940 INFO      WriteRemoteFile    Record length         : 80
-13:35:15.940 INFO      WriteRemoteFile    Record format         : FB
-13:35:15.940 INFO      WriteRemoteFile    Block size            : 27920
-13:35:15.940 INFO      WriteRemoteFile    Volumn name           : PCC006
-13:35:15.940 INFO      WriteRemoteFile    Unit name             : 
-13:35:15.940 INFO      WriteRemoteFile    Unit type             : TRK
-13:35:15.940 INFO      WriteRemoteFile    Primary allocation    : 5
-13:35:15.940 INFO      WriteRemoteFile    Secondary allocation  : 5
-13:35:15.940 INFO      WriteRemoteFile    Directory block count : 0
-13:35:15.940 INFO      WriteRemoteFile    Dataset type          : NONE
-13:35:15.940 INFO      WriteRemoteFile    Disposition           : Old
-13:35:15.940 INFO      WriteRemoteFile  Sending Write dataset request to Host 
-13:35:16.099 ERROR     CWCC Batch       Error initializing Dirs: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
-13:35:16.099 ERROR     Employee Indataset Hourly Unable to write dataset:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY at the host. com.compuware.totaltest.common.hci.api.exceptions.HciServicesFileIOException: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
-13:35:16.099 ERROR     Employee Indataset Hourly java.io.IOException: com.compuware.totaltest.common.hci.api.exceptions.HciServicesFileIOException: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
-	at com.compuware.xatester.xaunit.platforms.strategies.HCIHostCommunicator.initiate(HCIHostCommunicator.java:136)
-	at com.compuware.xatester.xaunit.platforms.strategies.AbstractSocketandFTPStrategy.initiate(AbstractSocketandFTPStrategy.java:73)
-	at com.compuware.xatester.xaunit.platforms.HostProcess.execute(HostProcess.java:230)
-	at com.compuware.xatester.xaunit.extensions.WriteRemoteFileComponent.interprete(WriteRemoteFileComponent.java:355)
-	at com.compuware.xatester.xaunit.extensions.WriteRemoteFileComponent.interprete(WriteRemoteFileComponent.java:1)
-	at com.compuware.xatester.xaunit.execution.XaUnitInterpreter.interpretChildComponents(XaUnitInterpreter.java:93)
-	at com.compuware.xatester.xaunit.extensions.ScopeComponent.interprete(ScopeComponent.java:125)
-	at com.compuware.xatester.xaunit.execution.XaUnitInterpreter.interpretChildComponents(XaUnitInterpreter.java:93)
-	at com.compuware.xatester.xaunit.extensions.ScopeComponent.interprete(ScopeComponent.java:125)
-	at com.compuware.xatester.xaunit.execution.XaUnitInterpreter.interpretChildComponents(XaUnitInterpreter.java:93)
-	at com.compuware.xatester.xaunit.execution.XaUnitInterpreter.interpret(XaUnitInterpreter.java:239)
-	at com.compuware.xatester.ui.execution.XaUnitExecutor.execute(XaUnitExecutor.java:211)
-	at com.compuware.xatester.ui.execution.XaUnitExecutor.access$0(XaUnitExecutor.java:207)
-	at com.compuware.xatester.ui.execution.XaUnitExecutor$XaUnitExecutorJob.run(XaUnitExecutor.java:319)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: com.compuware.totaltest.common.hci.api.exceptions.HciServicesFileIOException: Unable to determine if file /u/xatester/hddrxm0 exists. Reason Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
-	at com.compuware.totaltest.common.hci.resource.HciResourceServicesUSSFiles.fileExists(HciResourceServicesUSSFiles.java:128)
-	at com.compuware.xatester.xaunit.platforms.strategies.HCIClient.fileExists(HCIClient.java:189)
-	at com.compuware.xatester.xaunit.platforms.strategies.HCIClient.initiateDirs(HCIClient.java:442)
-	at com.compuware.xatester.xaunit.platforms.strategies.HCIHostCommunicator.initiate(HCIHostCommunicator.java:133)
-	... 14 more
-Caused by: com.compuware.ecc.core.exceptions.EccException: Unable to check for existence of the specified ZFS file. A MVS environmental or internal error has occurred.
-	at com.compuware.ecc.css.api.commandsets.ZFSCommandSet.createEccException(ZFSCommandSet.java:1141)
-	at com.compuware.ecc.css.api.commandsets.ZFSCommandSet.fileExists(ZFSCommandSet.java:1017)
-	at com.compuware.totaltest.common.hci.resource.HciResourceServicesUSSFiles.fileExists(HciResourceServicesUSSFiles.java:104)
-	... 17 more
+18:04:43.905 INFO      Scope            Scope completed
+18:04:43.905 INFO      Scope            Interpreting Scope name:Dataset Setup
+18:04:43.905 INFO      WriteRemoteFile  Interpreting WriteRemoteFile
+18:04:43.906 INFO      WriteRemoteFile  Variable substitution found in fileName name
+18:04:43.907 INFO      WriteRemoteFile  Actual fileName name is now:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
+18:04:43.908 INFO      WriteRemoteFile  Finding referenced records from the id: empInRecordsHourly
+18:04:43.909 LOG       WriteRemoteFile  Verifies that records conform to the MDataDefinition
+18:04:43.909 INFO      WriteRemoteFile  Number of records to write:3
+18:04:43.909 INFO      WriteRemoteFile    File name             : HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
+18:04:43.909 INFO      WriteRemoteFile    Record length         : 80
+18:04:43.909 INFO      WriteRemoteFile    Record format         : FB
+18:04:43.910 INFO      WriteRemoteFile    Block size            : 27920
+18:04:43.910 INFO      WriteRemoteFile    Volume name           : PCC006
+18:04:43.910 INFO      WriteRemoteFile    Unit name             : 
+18:04:43.910 INFO      WriteRemoteFile    Unit type             : TRK
+18:04:43.910 INFO      WriteRemoteFile    Primary allocation    : 5
+18:04:43.910 INFO      WriteRemoteFile    Secondary allocation  : 5
+18:04:43.910 INFO      WriteRemoteFile    Directory block count : 0
+18:04:43.910 INFO      WriteRemoteFile    Dataset type          : NONE
+18:04:43.911 INFO      WriteRemoteFile    Disposition           : Old
+18:04:43.929 INFO      WriteRemoteFile  Sending Write dataset request to Host 
+18:04:45.436 INFO      HCIClient        Creating job directory /u/xatester/hddrxm0/bf81d280ad4e49149e28496d856511fc
+18:04:49.280 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>EXPFILE</operation><runat>DAY</runat><loglevel>log</loglevel><encoding>EBCDIC</encoding><codepage>1047</codepage><jobdirectory>bf81d280ad4e49149e28496d856511fc</jobdirectory><outputfilepath>XAT_records.xml</outputfilepath><expfiles><expfile><expdsn>HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY</expdsn><expxml>XAT_records.xml</expxml><explrl>80</explrl><expblk>27920</expblk><expvol>PCC006</expvol><expsun>TRK</expsun><expprm>5</expprm><expsec>5</expsec><expmem /><expdis>Old</expdis><exprfm>FB</exprfm></expfile></expfiles></xatz_request></XATZREQ>
+18:04:49.495 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0872608</jobid><jobname>HDDRXM0X</jobname><starttime>20200525120449811</starttime></xatz_response></XATZRESP>
+18:04:49.497 LOG       HCIClient        Response received from Host. Message: JobId:J0872608
+18:04:49.497 INFO      HCIClient        Job has been started at host with JobId:J0872608
+18:04:49.497 INFO      CWCC Batch       Waiting for Execution Result from Host
+18:04:52.975 INFO      WriteRemoteFile  Write dataset request completed
+18:04:52.975 INFO      WriteRemoteFile  Interpreting WriteRemoteFile
+18:04:52.975 INFO      WriteRemoteFile  Variable substitution found in fileName name
+18:04:52.975 INFO      WriteRemoteFile  Actual fileName name is now:HDDRXM0.DEMO.TTTFT.CWXTDATA.SALES
+18:04:52.975 INFO      WriteRemoteFile  Finding referenced records from the id: empInRecordsSales
+18:04:52.975 LOG       WriteRemoteFile  Verifies that records conform to the MDataDefinition
+18:04:52.976 INFO      WriteRemoteFile  Number of records to write:9
+18:04:52.976 INFO      WriteRemoteFile    File name             : HDDRXM0.DEMO.TTTFT.CWXTDATA.SALES
+18:04:52.976 INFO      WriteRemoteFile    Record length         : 80
+18:04:52.976 INFO      WriteRemoteFile    Record format         : FB
+18:04:52.976 INFO      WriteRemoteFile    Block size            : 27920
+18:04:52.976 INFO      WriteRemoteFile    Volume name           : PCC006
+18:04:52.976 INFO      WriteRemoteFile    Unit name             : 
+18:04:52.977 INFO      WriteRemoteFile    Unit type             : TRK
+18:04:52.977 INFO      WriteRemoteFile    Primary allocation    : 5
+18:04:52.977 INFO      WriteRemoteFile    Secondary allocation  : 5
+18:04:52.977 INFO      WriteRemoteFile    Directory block count : 0
+18:04:52.977 INFO      WriteRemoteFile    Dataset type          : NONE
+18:04:52.978 INFO      WriteRemoteFile    Disposition           : Old
+18:04:52.978 INFO      WriteRemoteFile  Sending Write dataset request to Host 
+18:04:53.666 INFO      HCIClient        Creating job directory /u/xatester/hddrxm0/d245abb2a0cb44c9a7d56ee90f809fb1
+18:04:57.725 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>EXPFILE</operation><runat>DAY</runat><loglevel>log</loglevel><encoding>EBCDIC</encoding><codepage>1047</codepage><jobdirectory>d245abb2a0cb44c9a7d56ee90f809fb1</jobdirectory><outputfilepath>XAT_records.xml</outputfilepath><expfiles><expfile><expdsn>HDDRXM0.DEMO.TTTFT.CWXTDATA.SALES</expdsn><expxml>XAT_records.xml</expxml><explrl>80</explrl><expblk>27920</expblk><expvol>PCC006</expvol><expsun>TRK</expsun><expprm>5</expprm><expsec>5</expsec><expmem /><expdis>Old</expdis><exprfm>FB</exprfm></expfile></expfiles></xatz_request></XATZREQ>
+18:04:57.934 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0872610</jobid><jobname>HDDRXM0X</jobname><starttime>20200525120458248</starttime></xatz_response></XATZRESP>
+18:04:57.935 LOG       HCIClient        Response received from Host. Message: JobId:J0872610
+18:04:57.935 INFO      HCIClient        Job has been started at host with JobId:J0872610
+18:04:57.935 INFO      CWCC Batch       Waiting for Execution Result from Host
+18:05:01.353 INFO      WriteRemoteFile  Write dataset request completed
+18:05:01.353 INFO      WriteRemoteFile  Interpreting WriteRemoteFile
+18:05:01.353 INFO      WriteRemoteFile  Variable substitution found in fileName name
+18:05:01.354 INFO      WriteRemoteFile  Actual fileName name is now:HDDRXM0.DEMO.TTTFT.CWXTDATA.MGMT
+18:05:01.354 INFO      WriteRemoteFile  Finding referenced records from the id: empInRecordsMgmt
+18:05:01.354 LOG       WriteRemoteFile  Verifies that records conform to the MDataDefinition
+18:05:01.354 INFO      WriteRemoteFile  Number of records to write:4
+18:05:01.355 INFO      WriteRemoteFile    File name             : HDDRXM0.DEMO.TTTFT.CWXTDATA.MGMT
+18:05:01.355 INFO      WriteRemoteFile    Record length         : 80
+18:05:01.355 INFO      WriteRemoteFile    Record format         : FB
+18:05:01.355 INFO      WriteRemoteFile    Block size            : 27920
+18:05:01.356 INFO      WriteRemoteFile    Volume name           : PCC006
+18:05:01.356 INFO      WriteRemoteFile    Unit name             : 
+18:05:01.356 INFO      WriteRemoteFile    Unit type             : TRK
+18:05:01.356 INFO      WriteRemoteFile    Primary allocation    : 5
+18:05:01.356 INFO      WriteRemoteFile    Secondary allocation  : 5
+18:05:01.356 INFO      WriteRemoteFile    Directory block count : 0
+18:05:01.356 INFO      WriteRemoteFile    Dataset type          : NONE
+18:05:01.356 INFO      WriteRemoteFile    Disposition           : Old
+18:05:01.356 INFO      WriteRemoteFile  Sending Write dataset request to Host 
+18:05:01.994 INFO      HCIClient        Creating job directory /u/xatester/hddrxm0/cb15d141142e4b2fbb5f179888371d7f
+18:05:05.764 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>EXPFILE</operation><runat>DAY</runat><loglevel>log</loglevel><encoding>EBCDIC</encoding><codepage>1047</codepage><jobdirectory>cb15d141142e4b2fbb5f179888371d7f</jobdirectory><outputfilepath>XAT_records.xml</outputfilepath><expfiles><expfile><expdsn>HDDRXM0.DEMO.TTTFT.CWXTDATA.MGMT</expdsn><expxml>XAT_records.xml</expxml><explrl>80</explrl><expblk>27920</expblk><expvol>PCC006</expvol><expsun>TRK</expsun><expprm>5</expprm><expsec>5</expsec><expmem /><expdis>Old</expdis><exprfm>FB</exprfm></expfile></expfiles></xatz_request></XATZREQ>
+18:05:05.972 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0872611</jobid><jobname>HDDRXM0X</jobname><starttime>20200525120506285</starttime></xatz_response></XATZRESP>
+18:05:05.975 LOG       HCIClient        Response received from Host. Message: JobId:J0872611
+18:05:05.975 INFO      HCIClient        Job has been started at host with JobId:J0872611
+18:05:05.976 INFO      CWCC Batch       Waiting for Execution Result from Host
+18:05:09.390 INFO      WriteRemoteFile  Write dataset request completed
+18:05:09.390 INFO      Scope            Scope completed
+18:05:09.390 INFO      Scope            Scope completed
+18:05:09.391 INFO      Scope            Interpreting Scope name:Execute Test
+18:05:09.391 INFO      Component        Interpreting Component: CWXTCOB program:CWXTCOB
+18:05:09.392 INFO      Component        Using setup JCL for execution
+18:05:09.392 INFO      Component          Variable substitution found in setup JCL, now substituted
+18:05:09.392 INFO      Component          JCL for setup:
+//EMPFILE DD DISP=SHR,
+//  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
+//        DD DISP=SHR,
+//  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.SALES
+//        DD DISP=SHR,
+//  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.MGMT
+//RPTFILE DD DISP=SHR,
+//  DSN=HDDRXM0.DEMO.TTTFT.CWXTRPT
+18:05:09.398 LOG       CWCC Batch       Final JCL setup for the component:
+//EMPFILE DD DISP=SHR,
+//  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY
+//        DD DISP=SHR,
+//  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.SALES
+//        DD DISP=SHR,
+//  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.MGMT
+//RPTFILE DD DISP=SHR,
+//  DSN=HDDRXM0.DEMO.TTTFT.CWXTRPT
+//RPTFILE DD DISP=SHR,DSN=HDDRXM0.DEMO.CWXTRPT
 
-13:35:16.099 ERROR     Engine           Unable to write dataset:HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY at the host. 
-13:35:16.099 ERROR     Engine           An error occurred. Now stopping the execution.
-13:35:16.099 ERROR     Scope            Scope completed unexpectedly. A child component failed.
-13:35:16.099 ERROR     Scope            Scope completed unexpectedly. A child component failed.
-13:35:16.099 COMMENT   Engine           Test Scenario execution ended
+18:05:09.398 LOG       CWCC Batch       Component Runtime Settings:
+18:05:09.398 LOG       CWCC Batch         Load libraries :SALESSUP.RXN3.QA1.LOAD,SALESSUP.RXN3.STG.LOAD,SALESSUP.RXN3.PRD.LOAD
+18:05:09.398 LOG       CWCC Batch         Optional main Load library:SALESSUP.RXN3.DEV1.LOAD
+18:05:09.398 LOG       CWCC Batch         Listing libraries         :
+18:05:09.399 LOG       CWCC Batch         SysDebug libraries        :
+18:05:09.399 LOG       CWCC Batch         DB2 Subsystem ID          :
+18:05:09.399 LOG       CWCC Batch         DB2 plan                  :
+18:05:09.399 LOG       CWCC Batch         Call interface            :NONE
+18:05:09.399 LOG       CWCC Batch         Debugger type             :NONE
+18:05:09.399 LOG       CWCC Batch         Component type            :COBOL
+18:05:09.400 INFO      CWCC Batch       Sending Module execution request to Host for module:CWXTCOB rollback:false
+18:05:10.018 INFO      HCIClient        Creating job directory /u/xatester/hddrxm0/04ea0c021004482889aa3d09fcbca3e1
+18:05:10.287 LOG       CWCC Batch       Uploading input data for module CWXTCOB
+18:05:11.276 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>EXECUTE</operation><runat>DAY</runat><loglevel>log</loglevel><inputfilepath>XAT_Module.i.xml</inputfilepath><outputfilepath>XAT_Module.o.xml</outputfilepath><runtime>BATCH</runtime><callinterface /><applid /><db2plan /><db2id /><rollback>false</rollback><jobdirectory>04ea0c021004482889aa3d09fcbca3e1</jobdirectory><amode24>false</amode24><members><membername>CWXTCOB</membername></members><loads><mainload>SALESSUP.RXN3.DEV1.LOAD</mainload><load>SALESSUP.RXN3.QA1.LOAD</load><load>SALESSUP.RXN3.STG.LOAD</load><load>SALESSUP.RXN3.PRD.LOAD</load></loads><codepage>1047</codepage><lang>COBOL</lang><refs><ref>//EMPFILE DD DISP=SHR,</ref><ref>//  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.HOURLY</ref><ref>//        DD DISP=SHR,</ref><ref>//  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.SALES</ref><ref>//        DD DISP=SHR,</ref><ref>//  DSN=HDDRXM0.DEMO.TTTFT.CWXTDATA.MGMT</ref><ref>//RPTFILE DD DISP=SHR,</ref><ref>//  DSN=HDDRXM0.DEMO.TTTFT.CWXTRPT</ref><ref>//RPTFILE DD DISP=SHR,DSN=HDDRXM0.DEMO.CWXTRPT</ref></refs></xatz_request></XATZREQ>
+18:05:11.500 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0872612</jobid><jobname>HDDRXM0E</jobname><starttime>20200525120511816</starttime></xatz_response></XATZRESP>
+18:05:11.501 LOG       HCIClient        Response received from Host. Message: JobId:J0872612
+18:05:11.501 INFO      HCIClient        Job has been started at host with JobId:J0872612
+18:05:11.501 INFO      CWCC Batch       Waiting for Execution Result from Host
+18:05:14.774 INFO      CWCC Batch       Component completed with program exit: +0
+18:05:14.913 LOG       CWCC Batch       Setting execution variable 'jobid' to J0872612
+18:05:14.914 LOG       CWCC Batch       Setting execution variable 'jobname' to HDDRXM0E
+18:05:14.915 LOG       CWCC Batch       Setting execution variable 'programexit' to 0
+18:05:15.064 INFO      Component        Verifying program exit code: 0 against verify expression: value < 8
+18:05:15.480 INFO      Component        Program exit code was verified to be accepted by the expression: value < 8
+18:05:15.480 INFO      Component        Finished interpreting Component: CWXTCOB program:CWXTCOB
+18:05:15.480 INFO      Scope            Scope completed
+18:05:15.480 INFO      Scope            Interpreting Scope name:Verify
+18:05:15.480 WARNING   Scope            Scope element is disabled
+18:05:15.481 INFO      Scope            Interpreting Scope name:Compare
+18:05:15.481 INFO      FileAIDCompare   Executing File-AID Compare element with assertions:
+18:05:15.481 INFO      FileAIDCompare     Assert on changed records : true
+18:05:15.481 INFO      FileAIDCompare     Assert on inserted records: true
+18:05:15.481 INFO      FileAIDCompare     Assert on deleted records : true
+18:05:15.481 INFO      FileAIDCompare   Variable substitution found in Job JCL, now substituted
+18:05:15.481 LOG       FileAIDCompare   Job definition to be executed:
+//FASTEP   EXEC PGM=FILEAID,REGION=08M
+//STEPLIB  DD DISP=SHR,DSN=SYS2.CW.VJR17Y.CXVJLOAD
+//         DD DISP=SHR,DSN=SYS2.CW.VJR17Y.SXVJLOAD
+//SYSPRINT DD  SYSOUT=*
+//SYSLIST  DD  SYSOUT=*
+//DD01     DD  DSN=HDDRXM0.DEMO.TTTFT.CWXTRPT.EXPECT,
+//             DISP=SHR
+//DD01C    DD  DSN=HDDRXM0.DEMO.TTTFT.CWXTRPT,
+//             DISP=SHR
+//DD01CP   DD  DSN=HDDRXM0.DEMO.FA.COMPCRIT(CWXTCOB),
+//             DISP=SHR                              
+//DD01RL   DD  DSN=HDDRXM0.DEMO.COPY,
+//             DISP=SHR
+//DD01XR   DD  DSN=HDDRXM0.DEMO.XREF(RPTFILE),
+//             DISP=SHR
+//SYSIN    DD  *
+$$DD01 COMPARE
+/*
+18:05:15.484 INFO      CWCC Batch       Sending Job execution request to Host 
+18:05:16.121 INFO      HCIClient        Creating job directory /u/xatester/hddrxm0/30c2ff319ccd42939c46c14468497318
+18:05:17.148 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>EXECUTE</operation><runat>DAY</runat><loglevel>log</loglevel><jobname>FILEAIDC</jobname><runtime>JOB</runtime><refs file="HDDRXM0.XAJCL.A65A48FD.REFS" /></xatz_request></XATZREQ>
+18:05:17.344 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0872613</jobid><jobname>FILEAIDC</jobname><starttime>20200525120517660</starttime></xatz_response></XATZRESP>
+18:05:17.344 LOG       HCIClient        Response received from Host. Message: JobId:J0872613
+18:05:17.345 INFO      HCIClient        Job has been started at host with JobId:J0872613
+18:05:17.348 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>JOBINFO</operation><runat>DAY</runat><jobid>J0872613</jobid></xatz_request></XATZREQ>
+18:05:17.509 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0016</resultcode><resultmessage>XATZJINF error 1504: Job not found      </resultmessage><jobid /></xatz_response></XATZRESP>
+18:05:17.511 LOG       HCIClient        Response received from Host. Message:XATZJINF error 1504: Job not found JobId:
+18:05:17.511 WARNING   CWCC Batch       Unable to get job information from host. Server responded with an error. Message: XATZJINF error 1504: Job not found ReturnCode:0016
+18:05:20.513 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>JOBINFO</operation><runat>DAY</runat><jobid>J0872613</jobid></xatz_request></XATZREQ>
+18:05:20.677 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0000</resultcode><resultmessage>Job information successfully returned</resultmessage><jobid /><responsedata><job><name>FILEAIDC</name><status>OUTPUT</status><returncode>CC=0000    </returncode><steps><step><id>J0872613</id><name>JES2    </name><procstep>        </procstep><ddname>JESMSGLG</ddname><linect>   21</linect><lrecl>  133</lrecl><dsname>HDDRXM0.FILEAIDC.J0872613.D0000002.JESMSGLG </dsname></step><step><id>J0872613</id><name>JES2    </name><procstep>        </procstep><ddname>JESJCL  </ddname><linect>   33</linect><lrecl>  136</lrecl><dsname>HDDRXM0.FILEAIDC.J0872613.D0000003.JESJCL   </dsname></step><step><id>J0872613</id><name>JES2    </name><procstep>        </procstep><ddname>JESYSMSG</ddname><linect>   48</linect><lrecl>  137</lrecl><dsname>HDDRXM0.FILEAIDC.J0872613.D0000004.JESYSMSG </dsname></step><step><id>J0872613</id><name>FASTEP  </name><procstep>        </procstep><ddname>SYSPRINT</ddname><linect>   88</linect><lrecl>  133</lrecl><dsname>HDDRXM0.FILEAIDC.J0872613.D0000103.?        </dsname></step><step><id>J0872613</id><name>FASTEP  </name><procstep>        </procstep><ddname>SYSLIST </ddname><linect>  135</linect><lrecl>  133</lrecl><dsname>HDDRXM0.FILEAIDC.J0872613.D0000104.?        </dsname></step></steps></job></responsedata></xatz_response></XATZRESP>
+18:05:20.678 LOG       HCIClient        Response received from Host. Message:Job information successfully returned JobId:
+18:05:20.680 INFO      CWCC Batch       Job has completed, JobId:J0872613
+18:05:20.681 LOG       CWCC Batch       Setting execution variable 'jobid' to J0872613
+18:05:20.681 LOG       CWCC Batch       Setting execution variable 'jobname' to FILEAIDC
+18:05:20.683 LOG       FileAIDCompare   File-AID Job submitted with jobID: J0872613
+18:05:20.684 LOG       FileAIDCompare   Retrieving File-AID compare result from spool file DD:SYSLIST, STEP: FASTEP...
+18:05:21.171 LOG       CWCC Batch       Looking for spool file with stepName:FASTEP dd:SYSLIST procStep:
+18:05:21.632 ERROR     FileAIDCompare   Number of records changed: 3. We now set the test scenario to failed
+18:05:21.634 INFO      Scope            Scope completed
+18:05:21.634 COMMENT   Engine           Test Scenario execution ended

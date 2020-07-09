@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XaUnitResult resultType="SUCCESS" containsSimulation="false">
+  <ExecutionId>af1f7305-d945-42db-80c3-0f75463509fa</ExecutionId>
+  <Message />
+  <AST>
+    <XaUnit xmlns="http://www.xact.dk/xatester/v/1" xmlns:data="http://www.xact.dk/xatester/data/v/1">
+      <Test>
+        <Component label="CWXTSUBC - Path3" moduleName="CWXTSUBC" programExitVerify="value &lt; 8" programExit="0" rollback="false">
+          <Data>
+            <emp-type>S</emp-type>
+            <sales-amount>20000</sales-amount>
+            <comm-total expected="400">400</comm-total>
+          </Data>
+        </Component>
+      </Test>
+      <MetaData>
+        <Component name="CWXTSUBC" type="COBOL">
+          <INOUT>
+            <emp-type type="Character" length="1" bytes="1" />
+            <sales-amount type="NumericDisplay" length="6" bytes="8" signed="false" decimals="2" />
+            <comm-total type="NumericPacked" length="5" bytes="4" signed="false" decimals="2" />
+          </INOUT>
+        </Component>
+      </MetaData>
+    </XaUnit>
+  </AST>
+  <Context>
+    <ExecutionContext xmlns="http://www.xact.dk/xatester/v/1" environment="5cee98c2d3142c1f90a4976d" logLevel="LOG" remote="false" useSimulations="true" uploadResult="false" timeout="600" readTimeout="30" debuggerType="NONE" jobInfoInterval="3" userid="HDDRXM0">
+      <platformruntime database="DBCCCWCC" driver="com.ibm.db2.jcc.DB2Driver" uri="jdbc:db2://cwcc.compuware.com:546/${database}" environmenttype="BATCH" callinterface="NONE" />
+      <ExtensionData />
+      <ExtensionData componentName="cwxtsubc" componentId="5d4d25e2423da3164cab5ca4">
+        <Parameter key="mainmodule">
+          <Value>CWXTCOB</Value>
+        </Parameter>
+        <Parameter key="sourcelibrary">
+          <Value>SALESSUP.RXN3.DEV3.COB</Value>
+        </Parameter>
+        <Parameter key="loadlibraries">
+          <Value>SALESSUP.RXN3.QA3.LOAD</Value>
+          <Value>SALESSUP.RXN3.STG.LOAD</Value>
+          <Value>SALESSUP.RXN3.PRD.LOAD</Value>
+        </Parameter>
+        <Parameter key="loadlibrary">
+          <Value>SALESSUP.RXN3.DEV3.LOAD</Value>
+        </Parameter>
+        <Parameter key="sourcelibraries">
+          <Value>SALESSUP.RXN3.DEV3.CPY</Value>
+        </Parameter>
+        <Parameter key="callinterface">
+          <Value>NONE</Value>
+        </Parameter>
+      </ExtensionData>
+      <References componentName="cwxtsubc" />
+      <XaUnit xmlns:data="http://www.xact.dk/xatester/data/v/1" componentNameUnderTest="cwxtsubc" path="CWXTSUBC.scenario">
+        <Test>
+          <Component label="CWXTSUBC - Path3" moduleName="CWXTSUBC" programExitVerify="value &lt; 8" rollback="false">
+            <Data>
+              <emp-type>S</emp-type>
+              <sales-amount>20000</sales-amount>
+              <comm-total expected="400" />
+            </Data>
+          </Component>
+        </Test>
+        <MetaData>
+          <Component name="CWXTSUBC" type="COBOL">
+            <INOUT>
+              <emp-type type="Character" length="1" bytes="1" />
+              <sales-amount type="NumericDisplay" length="6" bytes="8" signed="false" decimals="2" />
+              <comm-total type="NumericPacked" length="5" bytes="4" signed="false" decimals="2" />
+            </INOUT>
+          </Component>
+        </MetaData>
+      </XaUnit>
+      <ExternalResources />
+    </ExecutionContext>
+  </Context>
+  <Started>20200709-12-49-17</Started>
+  <Ended>20200709-12-49-25</Ended>
+</XaUnitResult>

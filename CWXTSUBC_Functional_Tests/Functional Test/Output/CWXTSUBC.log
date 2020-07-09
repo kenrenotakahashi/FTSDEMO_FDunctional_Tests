@@ -1,0 +1,55 @@
+12:49:17.434 COMMENT   Engine           Test Scenario execution started
+12:49:17.434 INFO      Engine           Using context settings:
+  Engine Version       : 20.3
+  Environment id                : 5cee98c2d3142c1f90a4976d
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : cwcc.compuware.com
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : HDDRXM0
+  Use Repository Server         : true
+12:49:17.435 INFO      Engine           Setting variables from context and context data extensions
+12:49:17.435 INFO      Engine             id: environmentId      value: 5cee98c2d3142c1f90a4976d
+12:49:17.435 INFO      Engine             id: environmentType    value: BATCH
+12:49:17.435 INFO      Engine             id: userId             value: HDDRXM0
+12:49:17.435 INFO      Engine             id: accountingInfo     value: 
+12:49:17.435 INFO      Component        Interpreting Component: CWXTSUBC - Path3 program:CWXTSUBC
+12:49:17.436 LOG       CWCC Batch       Component Runtime Settings:
+12:49:17.436 LOG       CWCC Batch         Load libraries :SALESSUP.RXN3.QA3.LOAD,SALESSUP.RXN3.STG.LOAD,SALESSUP.RXN3.PRD.LOAD
+12:49:17.436 LOG       CWCC Batch         Optional main Load library:SALESSUP.RXN3.DEV3.LOAD
+12:49:17.436 LOG       CWCC Batch         Listing libraries         :
+12:49:17.436 LOG       CWCC Batch         SysDebug libraries        :
+12:49:17.436 LOG       CWCC Batch         DB2 Subsystem ID          :
+12:49:17.436 LOG       CWCC Batch         DB2 plan                  :
+12:49:17.436 LOG       CWCC Batch         Call interface            :NONE
+12:49:17.437 LOG       CWCC Batch         Debugger type             :NONE
+12:49:17.437 LOG       CWCC Batch         Component type            :COBOL
+12:49:17.438 INFO      CWCC Batch       Sending Module execution request to Host for module:CWXTSUBC rollback:false
+12:49:17.576 INFO      HCIClient        Creating job directory /u/xatester/hddrxm0/252b1ccab2bc40cb84b105920f705299
+12:49:17.850 LOG       CWCC Batch       Uploading input data for module CWXTSUBC
+12:49:18.845 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>EXECUTE</operation><runat>DAY</runat><loglevel>log</loglevel><inputfilepath>XAT_Module.i.xml</inputfilepath><outputfilepath>XAT_Module.o.xml</outputfilepath><runtime>BATCH</runtime><callinterface /><applid /><db2plan /><db2id /><rollback>false</rollback><jobdirectory>252b1ccab2bc40cb84b105920f705299</jobdirectory><amode24>false</amode24><members><membername>CWXTSUBC</membername></members><loads><mainload>SALESSUP.RXN3.DEV3.LOAD</mainload><load>SALESSUP.RXN3.QA3.LOAD</load><load>SALESSUP.RXN3.STG.LOAD</load><load>SALESSUP.RXN3.PRD.LOAD</load></loads><codepage>1047</codepage><mainmodule>CWXTCOB</mainmodule><lang>COBOL</lang></xatz_request></XATZREQ>
+12:49:19.323 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0892164</jobid><jobname>HDDRXM0E</jobname><starttime>20200709064919282</starttime></xatz_response></XATZRESP>
+12:49:19.324 LOG       HCIClient        Response received from Host. Message: JobId:J0892164
+12:49:19.324 INFO      HCIClient        Job has been started at host with JobId:J0892164
+12:49:25.155 INFO      CWCC Batch       Job execution completed with status:
+  Job status     : COMPLETED
+  Job status msg : Job HDDRXM0E(J0892164) ended with return code: 0000
+  Job name       : HDDRXM0E
+  Job id         : J0892164
+  Return code    : 0000
+  Abend code     : 
+  Abend reason   : 
+12:49:25.432 INFO      CWCC Batch       Component completed with program exit: +0
+12:49:25.572 LOG       CWCC Batch       Setting execution variable 'jobid' to J0892164
+12:49:25.573 LOG       CWCC Batch       Setting execution variable 'jobname' to HDDRXM0E
+12:49:25.573 LOG       CWCC Batch       Setting execution variable 'programexit' to 0
+12:49:25.711 INFO      Component        Verifying program exit code: 0 against verify expression: value < 8
+12:49:25.720 INFO      Component        Program exit code was verified to be accepted by the expression: value < 8
+12:49:25.721 INFO      Component        Finished interpreting Component: CWXTSUBC - Path3 program:CWXTSUBC
+12:49:25.721 COMMENT   Engine           Test Scenario execution ended

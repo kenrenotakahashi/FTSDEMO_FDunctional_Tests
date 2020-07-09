@@ -1,0 +1,44 @@
+10:54:39.689 COMMENT   Engine           Test Scenario execution started
+10:54:39.690 INFO      Engine           Using context settings:
+  Engine Version       : 20.2
+  Environment id                : 5cee98c2d3142c1f90a4976d
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : cwcc.compuware.com
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : hddrxm0
+  Use Repository Server         : true
+10:54:39.690 INFO      Engine           Setting variables from context and context data extensions
+10:54:39.690 INFO      Engine             id: environmentId      value: 5cee98c2d3142c1f90a4976d
+10:54:39.690 INFO      Engine             id: environmentType    value: BATCH
+10:54:39.690 INFO      Engine             id: userId             value: HDDRXM0
+10:54:39.690 INFO      Engine             id: accountingInfo     value: 
+10:54:39.691 INFO      Component        Interpreting Component: XADB2TS1 program:XADB2TS1
+10:54:39.693 LOG       CWCC Batch       Component Runtime Settings:
+10:54:39.693 LOG       CWCC Batch         Load libraries :HDDRXM0.DEMO.LOAD.PDSE
+10:54:39.693 LOG       CWCC Batch         Optional main Load library:
+10:54:39.693 LOG       CWCC Batch         Listing libraries         :
+10:54:39.693 LOG       CWCC Batch         SysDebug libraries        :
+10:54:39.693 LOG       CWCC Batch         DB2 Subsystem ID          :
+10:54:39.693 LOG       CWCC Batch         DB2 plan                  :
+10:54:39.693 LOG       CWCC Batch         Call interface            :NONE
+10:54:39.693 LOG       CWCC Batch         Debugger type             :NONE
+10:54:39.693 LOG       CWCC Batch         Component type            :COBOL
+10:54:39.694 INFO      CWCC Batch       Sending Module execution request to Host for module:XADB2TS1 rollback:false
+10:54:39.852 INFO      HCIClient        Creating job directory /u/xatester/hddrxm0/3fb7a1b05af3404584a8bcf55ef5f4ef
+10:54:40.132 LOG       CWCC Batch       Uploading input data for module XADB2TS1
+10:54:43.715 LOG       HCIClient        Request to host: <?xml version="1.0" encoding="UTF-8"?><XATZREQ><xatz_request><userid>HDDRXM0</userid><xpassword>XXX</xpassword><operation>EXECUTE</operation><runat>DAY</runat><loglevel>log</loglevel><inputfilepath>XAT_Module.i.xml</inputfilepath><outputfilepath>XAT_Module.o.xml</outputfilepath><runtime>BATCH</runtime><callinterface /><applid /><db2plan /><db2id /><rollback>false</rollback><jobdirectory>3fb7a1b05af3404584a8bcf55ef5f4ef</jobdirectory><amode24>false</amode24><members><membername>XADB2TS1</membername></members><loads><mainload>HDDRXM0.DEMO.LOAD.PDSE</mainload></loads><codepage>1047</codepage><lang>COBOL</lang></xatz_request></XATZREQ>
+10:54:43.929 LOG       HCIClient        Response from host: <?xml version="1.0" encoding="UTF-8"?><XATZRESP xmlns:xsi="http://www.w3.ORG/2001/XMLSCHEMA-INSTANCE"><xatz_response><resultcode>0</resultcode><resultmessage></resultmessage><jobid>J0878094</jobid><jobname>HDDRXM0E</jobname><starttime>20200610045443882</starttime></xatz_response></XATZRESP>
+10:54:43.930 LOG       HCIClient        Response received from Host. Message: JobId:J0878094
+10:54:43.931 INFO      HCIClient        Job has been started at host with JobId:J0878094
+10:54:43.931 INFO      CWCC Batch       Waiting for Execution Result from Host
+10:54:47.210 ERROR     CWCC Batch       Message from host: Module XADB2TS1 not found
+10:54:47.215 ERROR     Engine           Unable to execute the module:XADB2TS1 at the host. Notification received from host with FAILURE status. Error: Module XADB2TS1 not found
+10:54:47.215 ERROR     Engine           An error occurred. Now stopping the execution.
+10:54:47.215 COMMENT   Engine           Test Scenario execution ended
