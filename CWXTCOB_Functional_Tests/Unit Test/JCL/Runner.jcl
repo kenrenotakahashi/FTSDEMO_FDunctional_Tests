@@ -5,7 +5,7 @@ ${TOTALTEST_JOBCARD}
 //*** AS NOTIFY=&SYSUID and also a REGION=0M parameter
 //*
 //********************************************************************
-//* Execute Target Runner AAA
+//* Execute Target Runner
 //********************************************************************
 //RUNNER EXEC PGM=TTTRUNNR
 //*
